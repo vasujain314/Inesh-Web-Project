@@ -1,0 +1,71 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 19/10/2017 08:52
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-headphones:before { content: "\f100"; }
+.flaticon-photo-camera:before { content: "\f101"; }
+.flaticon-diamond:before { content: "\f102"; }
+.flaticon-business:before { content: "\f103"; }
+.flaticon-light:before { content: "\f104"; }
+.flaticon-house-sketch:before { content: "\f105"; }
+.flaticon-left-arrow:before { content: "\f106"; }
+.flaticon-right-arrow:before { content: "\f107"; }
+.flaticon-cup:before { content: "\f108"; }
+.flaticon-trophy:before { content: "\f109"; }
+.flaticon-users:before { content: "\f10a"; }
+.flaticon-layers:before { content: "\f10b"; }
+.flaticon-computer:before { content: "\f10c"; }
+.flaticon-vector:before { content: "\f10d"; }
+.flaticon-bar-chart:before { content: "\f10e"; }
+.flaticon-access-denied:before { content: "\f10f"; }
+    
+    $font-Flaticon-headphones: "\f100";
+    $font-Flaticon-photo-camera: "\f101";
+    $font-Flaticon-diamond: "\f102";
+    $font-Flaticon-business: "\f103";
+    $font-Flaticon-light: "\f104";
+    $font-Flaticon-house-sketch: "\f105";
+    $font-Flaticon-left-arrow: "\f106";
+    $font-Flaticon-right-arrow: "\f107";
+    $font-Flaticon-cup: "\f108";
+    $font-Flaticon-trophy: "\f109";
+    $font-Flaticon-users: "\f10a";
+    $font-Flaticon-layers: "\f10b";
+    $font-Flaticon-computer: "\f10c";
+    $font-Flaticon-vector: "\f10d";
+    $font-Flaticon-bar-chart: "\f10e";
+    $font-Flaticon-access-denied: "\f10f";
