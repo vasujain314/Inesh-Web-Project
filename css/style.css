@@ -85,6 +85,10 @@
 
 ***/
 
+html, body { 
+	overflow-x: hidden; 
+}
+
 body {
 	font-size:15px;
 	color:#777777;
@@ -697,7 +701,7 @@ ul,li{
 
 .fact-counter{
     position:relative;
-    padding: 75px 0px 30px;
+    padding: 60px 0px 20px;
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center center;
@@ -769,7 +773,7 @@ ul,li{
 
 .testimonials-section{
 	position: relative;
-	margin: 150px 0px 120px;
+	margin: 120px 0px 30px;
 }
 .testimonials-section .section-title{
 	margin-bottom: -110px;
@@ -913,7 +917,7 @@ ul,li{
 ***/
 
 .choose-us{
-	padding: 110px 0px 115px;
+	padding: 0px 0px 115px;
 }
 .choose-us .section-title{
 	margin-bottom: 50px;
@@ -1837,4 +1841,29 @@ ul,li{
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
+}
+
+/*** 
+
+====================================================================
+	Technology Section Home Page
+====================================================================
+
+***/
+
+.technology{
+	padding: 60px 0px 115px;
+}
+.technology .section-title{
+	margin-bottom: 40px;
+}
+.technology .text p{
+	font-size: 17px;
+	line-height: 28px;
+	font-weight: 400;
+	color: #222222;
+}
+.tech-max-img-hw{
+	max-width: 7.5rem;
+	max-height: 7.2rem;
 }
