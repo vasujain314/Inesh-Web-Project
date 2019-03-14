@@ -1871,3 +1871,12 @@ ul,li{
 	max-width: 7.5rem;
 	max-height: 7.2rem;
 }
+
+#buttonn button:hover{
+	background-color: lightgrey;
+}
+
+.max-hw-img{
+	height: 13rem;
+	width: 15rem;
+}
