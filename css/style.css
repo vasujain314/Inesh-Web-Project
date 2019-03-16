@@ -1883,18 +1883,18 @@ ul,li{
 
 
 /* ANIMATE OVER EFFECT */
-.cb_container {
+.hover_container {
   position: relative;
   /* width: 50%; */
 }
 
-.image {
+.overlay-image {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.overlay {
+.hoverOverlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1907,11 +1907,11 @@ ul,li{
   transition: .5s ease;
 }
 
-.cb_container:hover .overlay {
+.hover_container:hover .hoverOverlay {
   height: 100%;
 }
 
-.text {
+.overlay-text {
   color: white;
   font-size: 1rem;
   position: absolute;
