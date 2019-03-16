@@ -1879,6 +1879,7 @@ ul,li{
 .max-hw-img{
 	height: 13rem;
 	width: 15rem;
+
 }
 
 
@@ -1922,4 +1923,5 @@ ul,li{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+
 }

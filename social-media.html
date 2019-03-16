@@ -2,8 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-
-<title>Inesh | Web development and Management</title>
+<title>Inesh | Social Media Marketing</title>
 
 <!-- Stylesheets -->
 <link href="css/bootstrap.css" rel="stylesheet">
@@ -17,7 +16,245 @@
 <!--Favicon-->
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <style>
 
+  #services {
+  padding: 30px 0 0 0;
+}
+
+#services .box {
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
+  background: #fff;
+  transition: 0.4s;
+}
+
+#services .box:hover {
+  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+}
+
+#services .box .icon {
+  float: left;
+}
+
+#services .box .icon i {
+  color: #444;
+  font-size: 64px;
+  transition: 0.5s;
+  line-height: 0;
+  margin-top: 34px;
+}
+
+#services .box .icon i:before {
+  background: #0c2e8a;
+  background: linear-gradient(45deg, #aecf40 0%, #a3ebd5 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#services .box h4 {
+  margin-left: 100px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+#services .box h4 a {
+  color: #444;
+}
+
+#services .box p {
+  font-size: 14px;
+  margin-left: 100px;
+  margin-bottom: 0;
+  line-height: 24px;
+}
+
+@media (max-width: 767px) {
+  #intro .intro-content h2 {
+    font-size: 34px;
+  }
+
+  #services .box .box {
+    margin-bottom: 20px;
+  }
+
+  #services .box .icon {
+    float: none;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  #services .box h4,
+  #services .box p {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+  ::-moz-selection { /* Code for Firefox */
+  
+  background: #aecf40;
+}
+
+::selection {
+  
+  background: #aecf40;
+}
+  
+  
+  
+  .intro-head{
+    z-index: 5;
+    white-space: nowrap;
+    /* font-weight: 700; */
+    color: rgb(0, 46, 90);
+    letter-spacing: -2px;
+    font-family: inherit;
+    visibility: inherit;
+    transition: none 0s ease 0s;
+    text-align: left;
+    line-height: 0px;
+    border-width: 0px;
+    margin: 0px;
+    padding: 9px 0px;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: 50% 50% 0px;
+  }
+  .intro-content{
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .dontknowthename{
+    border:1px solid lightgrey;
+    margin:0 10px;
+    border-radius: 5px;
+    max-width: 22.5%;
+    flex: 22.5%;
+    overflow: hidden;
+    max-height: 180px;
+  }
+  .dontknowthename h4{
+    font-size: 1.1em;
+  }
+  .dontknowthename .icon{
+    font-size: 55px;
+    color:#525459;
+    text-align: center;
+    margin-top:50px;
+  }
+  .dontknowthename-x{
+    border:1px solid lightgrey;
+    margin:0 10px;
+    border-radius: 5px;
+    
+    flex: 22.5%;
+    padding:0;
+  }
+  .dontknowthename-x img{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .dontknowthename-x h1{
+    font-size: 24px;
+  }
+  .dontknowthename-x ul{
+    padding-left: 0;
+    text-align: left;
+  }
+  .get-advice-heading{
+    font-size: 34px;
+    color:#0c2e8a;
+    line-height: 45px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+  .slidingVertical{
+    display: inline;
+    text-indent: 8px;
+    text-decoration:none;
+}
+.slidingVertical span{
+    animation: topToBottom 12.5s linear infinite 0s;
+    -ms-animation: topToBottom 12.5s linear infinite 0s;
+    -webkit-animation: topToBottom 12.5s linear infinite 0s;
+    opacity: 0;
+    /* overflow: hidden; */
+    position: absolute;
+}
+.slidingVertical span:nth-child(2){
+    animation-delay: 2.5s;
+    -ms-animation-delay: 2.5s;
+    -webkit-animation-delay: 2.5s;
+}
+.slidingVertical span:nth-child(3){
+    animation-delay: 5s;
+    -ms-animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+}
+.slidingVertical span:nth-child(4){
+    animation-delay: 7.5s;
+    -ms-animation-delay: 7.5s;
+    -webkit-animation-delay: 7.5s;
+}
+.slidingVertical span:nth-child(5){
+    animation-delay: 10s;
+    -ms-animation-delay: 10s;
+    -webkit-animation-delay: 10s;
+}
+.cb-container {
+    cursor: pointer;    
+    overflow: hidden;
+    position: relative;
+    transition:all 0.5s ease-out;
+}
+
+.cb-container:hover {
+    margin-top:-120px;
+}
+.dontknowthename:hover{
+  box-shadow: 0 5px 40px rgba(0,0,0,.05);
+
+}
+/*topToBottom Animation*/
+@-moz-keyframes topToBottom{
+    0% { opacity: 0; }
+    5% { opacity: 0; -moz-transform: translateY(-20px); }
+    10% { opacity: 1; -moz-transform: translateY(0px); }
+    25% { opacity: 1; -moz-transform: translateY(0px); }
+    30% { opacity: 0; -moz-transform: translateY(20px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-webkit-keyframes topToBottom{
+    0% { opacity: 0; }
+    5% { opacity: 0; -webkit-transform: translateY(-20px); }
+    10% { opacity: 1; -webkit-transform: translateY(0px); }
+    25% { opacity: 1; -webkit-transform: translateY(0px); }
+    30% { opacity: 0; -webkit-transform: translateY(20px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-ms-keyframes topToBottom{
+    0% { opacity: 0; }
+    5% { opacity: 0; -ms-transform: translateY(-20px); }
+    10% { opacity: 1; -ms-transform: translateY(0px); }
+    25% { opacity: 1; -ms-transform: translateY(0px); }
+    30% { opacity: 0; -ms-transform: translateY(20px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+  </style>
 </head>
 
 <body>
@@ -106,136 +343,133 @@
 
     <!-- WEB DEVELOPMENT -->
         <div class="container" style="margin-top: 3rem;">
-
-            <div class="row">
-                <div class="col-xs-10 col-xs-offset-1">
-                    <div class="section-title" style="margin-bottom: 4rem;">
-                        <h2 class="text-center" style="font-size:3.2rem">WEB DESIGNING AND DEVELOPMENT</h2>
+            <div class="section-title" style="margin-bottom: 4rem;">
+                        <h2 class="text-center" style="font-size:3.2rem">Social Media Marketing</h2>
                     </div>
-                </div>
-            </div>
             <div class="row">
-                <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1" style="margin-bottom: 2rem;">
-
+                <div class="col-sm-6">
+                    
                     <p class="my-3 text-justify">
-                        Your website is the most important component of your business marketing plan. In today’s 
-                        world where internet is everything and people are online for everything. The most important 
-                        part of your business is website because that is the medium source of interaction between user 
-                        and your business and it is the central hub for your message and content marketing efforts. 
-                        All other marketing materials should support and drive traffic to your website, so now we must 
-                        understand the importance of a website because it is the first impression your user would have 
-                        on behalf of your whole business as they don’t know what and who is your staff and their 
-                        abilities.
-                    </p>
+                       The process of gaining traffic, attention or branding of a product or service through social media sites is called social media marketing. 
+                        probably you are not going to get any business from that user.
+                       Social media itself is a catch-all term for those sites which can fundamentally provide various social functions. For example, Twitter is a social site that is designed to make people share short messages or "updates" with others. On the contrary, Facebook is a fully developed social networking site that allows sharing updates, photos, joining events and many other activities. Social media is a powerful way for businesses of all sizes to reach marketing prospects and customers.
+                     </p>
                     <div class="row text-center" id="buttonn">
-                <button class="btn btn-lg btn-default" style="margin-top: 10vh; box-shadow: 1px 1px 1px 1px lightgrey;">
-                    Request a quote&ensp;<span class="glyphicon glyphicon-arrow-right"></span>
-                </button>
-            </div>
+                        <button class="btn btn-lg btn-default" style="margin-top: 10vh; box-shadow: 1px 1px 1px 1px lightgrey;">
+                            Request a quote&ensp;<span class="glyphicon glyphicon-arrow-right"></span>
+                        </button>
+                    </div>
                 </div>
-                <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1" style="margin-bottom: 2rem;">
-                    <div class="row">
-                        <div style="height: 350px; background-color: grey; color:white;" class="text-center">
+                <div class="col-sm-6">
+                        <div style="height: 400px; background-color: grey; color:white;" class="text-center">
                             <p style="padding-top:20vh">IMG</p>
-                        </div>
-                    </div>
                 </div>
-            </div>   
-        </div>
-
-        <div class="container">
-            
-            
-        </div>
-
-        <div class="container" style="margin-top: 5rem;">
-            <div class="row">
-                <div class="col-xs-10 col-xs-offset-1">
-                    <div class="section-title" style="margin-bottom: 4rem;">
-                        <h2 class="text-center" style="font-size:3.2rem">Overview</h2>
-                    </div>
+                    
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-10 col-xs-offset-1">
-                    <p class="my-3 text-justify">
-                        First, they land on your website and if they don’t like the design of your website or it is taking much
-                        time to open, or it is hanging up a lot then it is certainly a negative impression and probably you are
-                        not going to get any business from that user. As the technology is advancing day by day in the field
-                        of website designing and development they have become more user friendly and tools have made
-                        them SEO friendly also.
-                    </p>
-                    <p class="my-3 text-justify">
-                        There are more than 1.8 billion websites in the world and the number is growing (smashing
-                        magazine) but still when you go out to start your website you tend to search thousands of websites
-                        to find the best reference and the rejection ratio is almost 98%. 98% are those websites which you
-                        open and reject in next 3 seconds may be because you did not like the design or it was very slow,
-                        thus we don’t want other people to feel the same kind of experience on your business website.
-                    </p>
-                    <p class="my-3 text-justify">
-                        We work with you to develop a user experience that provides value to your audience. Price means
-                        the number of visits and visits through social media and other channels. Using our years of
-                        experience and research we will provide you the best platform for your website according to your
-                        product or service which in result will be a fruitful experience to your user.
-                    </p>
+                
+    </div>
+    <br/><br/>
+<div class="container" >
+    <div class="row">
+        <div class="section-title" style="margin-bottom: 4rem;">
+                    <h2 class="text-center">Overview</h2>
                 </div>
-            </div>   
+                <p>Your potential customers are already communicating with brands through social media, and if you are not speaking directly to your audience through social media platforms like Facebook, Twitter, Instagram and Pinterest, then you are missing a huge aspect of marketing! Great marketing on social media can lead to remarkable success in your business, dedicated brand advocates and even driving leads and sales.
+Social media marketing is a form of online marketing which involves creating and sharing content on social media networks to achieve your marketing and branding goals. It involves actions like posting text, image updates, videos, and other content that increases user engagement, as well as paid social media ads. Before you start creating a social media marketing campaign, consider the goals of your business. Keeping a social strategy in mind, starting a social media marketing campaign is like roaming in a forest without a map - you may enjoy, but you might get lost.
+</p>
+    </div>
+</div>
+             <section id="services" >
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 dontknowthename " >
+            <div class="cb-container"  >
+                <div class="icon"><image src="img/x.png" width="60px" height="60px" style="margin-top:-35px"></div>             
+              <h4 class="title" Align="center" style="color:#0c2e8a"><a href="" style="color:#0c2e8a">Unique Investment Solutions</a></h4>
+              <p class="description">We have financial advisors who have significant experience in the financial services industry.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 dontknowthename">
+              <div class="cb-container">
+                <div class="icon"><image src="img/y.jpg" width="60px" height="60px"  style="margin-top:-35px"></div>
+                <h4 class="title" Align="center" style="color:#0c2e8a"><a href="" style="color:#0c2e8a">Manage Your Wealth</a></h4>
+                <p class="description">By taking 360* degree view of your financial goal, we work as personal advisor to help you manage your wealth.</p>
+              </div>
+            </div>  
+            <div class="col-lg-3 dontknowthename" >
+                <div class="cb-container">
+                  <div class="icon"><image src="img/z.jpg" width="60px" height="60px"  style="margin-top:-35px"></div>
+                  <h4 class="title" Align="center" ><a href=""style="color:#0c2e8a">Financial Clarity</a></h4>
+                  <p class="description">Platform allows its client to control and review all financial activities through technology.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 dontknowthename" >
+                  <div class="cb-container">
+                    <div class="icon"><image src="img/w.jpg" width="60px" height="60px" style="margin-top:-35px"></div>
+                    <h4 class="title" Align="center" ><a href=""style="color:#0c2e8a">Manage expenses</a></h4>
+                    <p class="description">We work to meet your financial vision, and bring the best wealth management solutions.</p>
+                  </div>
+                </div>
         </div>
+      </div>
+    </section>
 
 
-            <div class="container" style="margin-top: 9rem;">
-                <div class="row">
-                    <div class="section-title" style="margin-bottom: 3rem;">
-                        <h3 class="text-center" style="font-size: 3rem; color: black!important">TOOLS THAT WE USE</h3>
-                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="container" >
+                <div class="row text-center" style="margin: 12px;">
+                    <h3 class="text-center" style="font-size: 3rem; color: black!important">Here are a few questions to check when defining your social media marketing goals:</h3>
+<br/>
+                    <ul style="font-size: 20px; text-align: left;">
+                      <li> •    What are you expecting to achieve via social media marketing?</li><br/>
+<li>•   Who is the audience you are targeting?</li><br/>
+<li>•   How your targeted audience use social media and where they generally hang out?</li><br/>
+<li>•   What type of message do you want to send to your targeted audience with social media marketing?</li>
+<br/>
+                    </ul>
+                    
                 </div>
-                <div class="row text-center" style="margin-top: 5vh;">
-                    <div class="col-sm-4 col-md-4 col-xs-6" style="margin-bottom: 40px;">
-                        <img src="./img/java -web.png" class="img-fluid max-hw-img" alt="">
-                    </div>
+            </div>
 
-                    <div class="col-sm-4 col-md-4 col-xs-6" style="margin-bottom: 40px;">
-                        <img src="./img/joomla.png" class="img-fluid max-hw-img" alt="">
-
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6" style="margin-bottom: 40px;">
-                        <img src="./img/bootstrap3.png" class="img-fluid max-hw-img" alt="">
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6" style="margin-bottom: 40px;">
-                        <img src="./img/php.png" class="img-fluid max-hw-img" alt="">
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6" style="margin-bottom: 40px;">
-                        <img src="./img/wordpress-web.png" class="img-fluid max-hw-img" alt="">
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6" style="margin-bottom: 40px;">
-                        <img src="./img/html.png" class="img-fluid max-hw-img" alt="">
-                    </div>
+             <div class="container" >
+                <div class="row text-center" style="margin: 12px;">
+                    <h3 class="text-center" style="font-size: 3rem; color: black!important">How Social Media Marketing would help you to meet your marketing goals</h3>
+<br/>
+                    <ul style="font-size: 20px; text-align: left;">
+                      <li> •    Enhancing website traffic</li><br/>
+<li>•   Creating conversions</li><br/>
+<li>•   Increasing brand awareness</li><br/>
+<li>•   Generating a brand identity and positive brand alliance</li>
+<br/>
+<li>•   Improving communication and interaction with key audiences</li>
+<br/><br/>
+                    </ul>
+                    
                 </div>
                 <!-- <h3 class="text-center">
                     WordPress, PHP, Java, HTML, Joomla, Bootstrap
                 </h3> -->
-            </div>
-
-            <div class="container" style="margin-top: 5rem;">
-                <div class="row">
-                    <div class="col-xs-10 col-xs-offset-1">
-                        <div class="section-title" style="margin-bottom: 4rem;">
-                            <h2 class="text-center" style="font-size:3.2rem">Process We Follow</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-10 col-xs-offset-1">
-                        <p class="my-3 text-center">
-                            At Inesh we have a team of creative, innovative and dedicated experts and developers who work on
-                            all the modern technologies. They dedicate most of the time in inventing mechanisms and strategies
-                            for business to grow.
-                        </p>
-                    </div>
-                    <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-center" style="margin-top: 2rem">
-                        <img src="./img/ineshd.png" alt="" style="max-height: 38rem; max-width: 38rem;">
-                    </div>
-                </div>   
             </div>
 
     <!-- END WEB DEVELOPMENT -->
