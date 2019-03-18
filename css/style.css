@@ -1943,3 +1943,56 @@ ul,li{
 .mx-auto{margin-right:auto!important}
 .mb-auto,.my-auto{margin-bottom:auto!important}
 .ml-auto,.mx-auto{margin-left:auto!important}
+
+		.cb-container {
+    cursor: pointer;    
+    overflow: hidden;
+    position: relative;
+    transition:all 0.5s ease-out;
+}
+
+.cb-container:hover {
+    margin-top:-120px;
+}
+.dontknowthename:hover{
+  box-shadow: 0 5px 40px rgba(0,0,0,.05);
+
+}
+ .dontknowthename{
+    border:1px solid lightgrey;
+    margin:0 10px;
+    border-radius: 5px;
+    max-width: 22.5%;
+    flex: 22.5%;
+    overflow: hidden;
+    max-height: 180px;
+  }
+  .dontknowthename h4{
+    font-size: 1.1em;
+  }
+  .dontknowthename .icon{
+  	font-size: 55px;
+  	color:#525459;
+    text-align: center;
+    margin-top:50px;
+  }
+  .dontknowthename-x{
+  	border:1px solid lightgrey;
+    margin:0 10px;
+    border-radius: 5px;
+    
+    flex: 22.5%;
+    padding:0;
+  }
+  .dontknowthename-x img{
+  	border-top-right-radius: 5px;
+  	border-top-left-radius: 5px;
+  }
+  .dontknowthename-x h1{
+  	font-size: 24px;
+  }
+  .dontknowthename-x ul{
+  	padding-left: 0;
+  	text-align: left;
+  }
+
