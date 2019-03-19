@@ -1996,3 +1996,5 @@ ul,li{
   	text-align: left;
   }
 
+
+	.img-fluid{max-width:100%;height:auto}
