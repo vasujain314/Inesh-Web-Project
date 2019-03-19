@@ -1959,10 +1959,10 @@ ul,li{
 
 }
  .dontknowthename{
-    border:1px solid lightgrey;
+    /* border:1px solid lightgrey;
     margin:0 10px;
     border-radius: 5px;
-    max-width: 22.5%;
+    max-width: 22.5%; */
     flex: 22.5%;
     overflow: hidden;
     max-height: 180px;
