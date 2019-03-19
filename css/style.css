@@ -1875,12 +1875,12 @@ ul,li{
 #buttonn button:hover{
 	background-color: lightgrey;
 }
-
+/* 
 .max-hw-img{
 	height: 13rem;
 	width: 15rem;
 
-}
+} */
 
 
 /* ANIMATE OVER EFFECT */
@@ -1996,3 +1996,5 @@ ul,li{
   	text-align: left;
   }
 
+
+	.img-fluid{max-width:100%;height:auto}
