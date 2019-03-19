@@ -1940,29 +1940,6 @@ ul,li{
 	/* margin: 10px; */
 }
 
-@media (min-width: 576px) { 
-	.marg-res{
-		margin-right: 0vw!important;
-	}
-}
-@media (min-width: 768px) { 
-	.marg-res{
-		margin-right: 0vw!important;
-	}
-}
-
-@media (min-width: 992px) { 
-	.marg-res{
-		margin-right: 0vw!important;
-	}
-}
-@media (min-width: 1200px) { 
-	.marg-res{
-		margin-right: 5vw!important;
-	}
-}
-
-
 .mx-auto{margin-right:auto!important}
 .mb-auto,.my-auto{margin-bottom:auto!important}
 .ml-auto,.mx-auto{margin-left:auto!important}
@@ -1982,10 +1959,10 @@ ul,li{
 
 }
  .dontknowthename{
-    border:1px solid lightgrey;
+    /* border:1px solid lightgrey;
     margin:0 10px;
     border-radius: 5px;
-    max-width: 22.5%;
+    max-width: 22.5%; */
     flex: 22.5%;
     overflow: hidden;
     max-height: 180px;
