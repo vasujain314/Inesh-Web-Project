@@ -656,7 +656,7 @@ ul,li{
 ***/
 
 .wellcome-section{
-	padding: 110px 0px 70px;
+	padding: 50px 0px 70px;
 }
 .wellcome-section .section-title{
 	margin-bottom: 70px;
@@ -1998,3 +1998,7 @@ ul,li{
 
 
 	.img-fluid{max-width:100%;height:auto}
+	.col{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}
+	.d-flex{display:-ms-flexbox!important;display:flex!important}
+	.justify-content-around{-ms-flex-pack:distribute!important;justify-content:space-around!important}
+	.flex-nowrap{-ms-flex-wrap:nowrap!important;flex-wrap:nowrap!important}
