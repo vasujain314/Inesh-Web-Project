@@ -2002,3 +2002,9 @@ ul,li{
 	.d-flex{display:-ms-flexbox!important;display:flex!important}
 	.justify-content-around{-ms-flex-pack:distribute!important;justify-content:space-around!important}
 	.flex-nowrap{-ms-flex-wrap:nowrap!important;flex-wrap:nowrap!important}
+
+	.btn-default
+	{
+		background-color: red;
+		color: white;
+	}
