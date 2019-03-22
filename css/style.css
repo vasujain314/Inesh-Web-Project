@@ -656,7 +656,7 @@ ul,li{
 ***/
 
 .wellcome-section{
-	padding: 50px 0px 70px;
+	padding: 6vh 0px 70px;
 }
 .wellcome-section .section-title{
 	margin-bottom: 70px;
@@ -2002,3 +2002,34 @@ ul,li{
 	.d-flex{display:-ms-flexbox!important;display:flex!important}
 	.justify-content-around{-ms-flex-pack:distribute!important;justify-content:space-around!important}
 	.flex-nowrap{-ms-flex-wrap:nowrap!important;flex-wrap:nowrap!important}
+	.mx-auto{margin-right:auto!important}.mb-auto,.my-auto{margin-bottom:auto!important}.ml-auto,.mx-auto{margin-left:auto!important}
+
+@media (min-width: 576px) {  
+	.marg-res{
+		margin-left: 0vw!important;
+	}
+}
+
+@media (min-width: 768px) {  
+	.marg-res{
+		margin-left: 23vw!important;
+	}
+}
+
+@media (min-width: 992px) {  
+	.marg-res{
+		margin-left: 25vw!important;
+	}
+}
+
+@media (min-width: 1200px) {  
+	.marg-res{
+		margin-left: 25vw!important;
+	}
+}
+
+#carouselImg{
+	background-image: url('../final-assets/Home\ Page\ -\ Banner\ Image.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 600px;
+}
