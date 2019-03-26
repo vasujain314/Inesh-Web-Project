@@ -2077,9 +2077,21 @@ ul,li{
 	background-size: 100% 800px;
 	}
 }
+@media (max-width: 500px) {  
+	.marg-res{
+		margin-left: 25vw!important;
+	}
+	.carousel-margin{
+		margin-top: 30vh!important; 
+	}
+	#carouselImg{
+	height: 600px;
+	}
+}
 
 #carouselImg{
 	background-image: url('../final-assets/Home\ Page\ -\ Banner\ Image.jpg');
 	background-repeat: no-repeat;
 	/* background-size: 100% 600px; */
 }
+
