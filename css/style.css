@@ -2010,19 +2010,35 @@ ul,li{
 	.d-flex{display:-ms-flexbox!important;display:flex!important}
 	.justify-content-around{-ms-flex-pack:distribute!important;justify-content:space-around!important}
 	.flex-nowrap{-ms-flex-wrap:nowrap!important;flex-wrap:nowrap!important}
-<<<<<<< HEAD
 
 	.btn-default
 	{
 		background-color: red;
 		color: white;
 	}
-=======
 	.mx-auto{margin-right:auto!important}.mb-auto,.my-auto{margin-bottom:auto!important}.ml-auto,.mx-auto{margin-left:auto!important}
+
+@media (max-width: 576px) {  
+	.marg-res{
+		margin-left: 0vw!important;
+	}
+	.carousel-margin{
+		margin-top: 15vh!important; 
+	}
+	#carouselImg{
+		background-size: 100% 400px;
+	}
+}
 
 @media (min-width: 576px) {  
 	.marg-res{
 		margin-left: 0vw!important;
+	}
+	.carousel-margin{
+		margin-top: 20vh!important; 
+	}
+	#carouselImg{
+		background-size: 100% 400px;
 	}
 }
 
@@ -2030,11 +2046,23 @@ ul,li{
 	.marg-res{
 		margin-left: 23vw!important;
 	}
+	.carousel-margin{
+		margin-top: 20vh!important; 
+	}
+	#carouselImg{
+		background-size: 100% 400px;
+	}
 }
 
 @media (min-width: 992px) {  
 	.marg-res{
 		margin-left: 25vw!important;
+	}
+	.carousel-margin{
+		margin-top: 30vh!important; 
+	}
+	#carouselImg{
+		background-size: 100% 600px;
 	}
 }
 
@@ -2042,11 +2070,16 @@ ul,li{
 	.marg-res{
 		margin-left: 25vw!important;
 	}
+	.carousel-margin{
+		margin-top: 30vh!important; 
+	}
+	#carouselImg{
+	background-size: 100% 800px;
+	}
 }
 
 #carouselImg{
 	background-image: url('../final-assets/Home\ Page\ -\ Banner\ Image.jpg');
 	background-repeat: no-repeat;
-	background-size: 100% 600px;
+	/* background-size: 100% 600px; */
 }
->>>>>>> d25924dfafb9aba5962e803d117861d86a3bc256
