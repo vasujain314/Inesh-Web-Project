@@ -2023,10 +2023,14 @@ ul,li{
 		margin-left: 0vw!important;
 	}
 	.carousel-margin{
-		margin-top: 15vh!important; 
+		margin-top: 5vh!important; 
 	}
 	#carouselImg{
-		background-size: 100% 400px;
+		height: 350px;
+		background-size: 100% 300px;
+	}
+	.font-res{
+		font-size: 1.4rem;
 	}
 }
 
@@ -2035,10 +2039,14 @@ ul,li{
 		margin-left: 0vw!important;
 	}
 	.carousel-margin{
-		margin-top: 20vh!important; 
+		margin-top: 10vh!important; 
 	}
 	#carouselImg{
-		background-size: 100% 400px;
+		height: 350px;
+		background-size: 100% 300px;
+	}
+	.font-res{
+		font-size: 1.8rem;
 	}
 }
 
@@ -2047,10 +2055,14 @@ ul,li{
 		margin-left: 23vw!important;
 	}
 	.carousel-margin{
-		margin-top: 20vh!important; 
+		margin-top: 15vh!important; 
 	}
 	#carouselImg{
-		background-size: 100% 400px;
+		height: 400px;
+		background-size: 100% 350px;
+	}
+	.font-res{
+		font-size: 1.8rem;
 	}
 }
 
@@ -2059,10 +2071,14 @@ ul,li{
 		margin-left: 25vw!important;
 	}
 	.carousel-margin{
-		margin-top: 30vh!important; 
+		margin-top: 20vh!important; 
 	}
 	#carouselImg{
-		background-size: 100% 600px;
+		height: 400px;
+		background-size: 100% 350px;
+	}
+	.font-res{
+		font-size: 1.8rem;
 	}
 }
 
@@ -2071,27 +2087,20 @@ ul,li{
 		margin-left: 25vw!important;
 	}
 	.carousel-margin{
-		margin-top: 30vh!important; 
+		margin-top: 25vh!important; 
 	}
 	#carouselImg{
-	background-size: 100% 800px;
+	height: 450px;
+	background-size: 100% 400px;
 	}
-}
-@media (max-width: 500px) {  
-	.marg-res{
-		margin-left: 25vw!important;
-	}
-	.carousel-margin{
-		margin-top: 30vh!important; 
-	}
-	#carouselImg{
-	height: 600px;
+	.font-res{
+		font-size: 1.8rem;
 	}
 }
 
 #carouselImg{
-	background-image: url('../final-assets/Home\ Page\ -\ Banner\ Image.jpg');
+	background-image: url('../final-assets/home-page-img.jpg');
 	background-repeat: no-repeat;
-	/* background-size: 100% 600px; */
+	/* background-size: auto ; */
 }
 
