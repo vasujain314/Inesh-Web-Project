@@ -4,10 +4,10 @@
 
   <header class="main-header sticky-header">
         <div class="container-fluid clearfix">
-            <div class="logo" >
-                <figure>
-                    <a href="index.html"  ><img width="150px" style="margin-top:10px"  src="images/logo.png" alt=""></a>
-                </figure>
+            <div class="logo"  style="z-index: 999999999;">
+            
+                    <a href="index.html"  ><img  style="margin-top:10px; width: 150px;"  src="images/logo.png" alt=""></a>
+            
             </div>
             <nav class="main-menu">
                 <div class="navbar-header">
@@ -47,7 +47,14 @@
                             </ul>
                         </li> 
                          <li><a href="ourwork.html">Our Work</a></li>                  
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li class="dropdown"><a href="marketing.html" onclick="window.location='contact.html'">Contact us</a>
+                            <ul style="color: white;">
+                                <li> &nbsp;<img src="img/canada.png" style="width: 13px; height: 13px;"> +1 (647) 297-3837</li>
+                                <li> &nbsp;<img src="img/usa.png" style="width: 13px; height: 13px;"> +1 (510) 400-4818</li>
+                                <li> &nbsp;<img src="img/india.png" style="width: 13px; height: 13px;"> +91 9999 122 634</li>
+
+                            </ul>
+                        </li> 
                     </ul>
                 </div>                    
             </nav>
