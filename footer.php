@@ -60,7 +60,7 @@
                 <div class="col-sm-2"><a style="font-size: 13px;" href="refund.html"> Refund & Cancellation policy</a></div>
 
               <div class="col-sm-2">
-                <p>Eventre &copy; 2017 All Right Reserved</p>
+                <p>Inesh Enterprises © 2019 All Rights Reserved</p>
                </div>
 
                  
