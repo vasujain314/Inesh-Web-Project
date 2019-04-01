@@ -9,17 +9,17 @@
                     <a href="index.html"  ><img  style="margin-top:10px; width: 150px;"  src="images/logo.png" alt=""></a>
             
             </div>
-            <nav class="main-menu">
+            <nav class="main-menu navbar">
                 <div class="navbar-header">
                     <!-- Toggle Button -->      
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <button type="button" class="navbar-toggle" onclick="toggle()">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
                 </div>           
-                <div class="navbar-collapse collapse clearfix">
-                    <ul class="navigation clearfix">
+                <div class="navbar-collapse collapse" id="collapseNav">
+                    <ul class="navigation">
                         <li class="current"></li> 
                         <li><a href="about.html">About</a></li>
                         <li class="dropdown"><a href="service.html" onclick="window.location='service.html'">Web Services</a>
@@ -136,5 +136,16 @@
 <script src="js/jquery.countTo.js"></script>
 
 <script src="js/script.js"></script>
+<script>
+    function toggle(){
+        let el = document.getElementById('collapseNav');
+        if(el.classList[1]){
+            el.classList.remove('collapse');
+        }
+        else{
+            el.classList.add('collapse');
+        }
+    }
+</script>
 
 </body></html>
