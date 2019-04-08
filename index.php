@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Inesh | Home Page</title>
+
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+<!-- mobile responsive meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!--Favicon-->
+<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+<link rel="icon" href="images/logo.png" type="image/x-icon">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$(function(){
+$("#header1").load("header.php");
+$("#footer1").load("footer.php");
+});
+    </script>
+
+</head>
+
+<body>
+<div class="page-wrapper">
+ 	
+
+    <!-- Preloader -->
+    <div class="preloader"></div>
+    <!-- Preloader -->
+
+
+   
+    
+   <div id="header1"></div>
+    <!--Main Header-->
+  
+
+
+    <div class="container-fluid" id="carouselImg">
+        <div id="myCarousel" class="carousel slide carousel-margin" style="padding-bottom: 5vh!important;" data-ride="carousel">
+          <!-- <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol> -->
+          <div class="carousel-inner row" style="color: solid black" >
+            <div class="item active col-xs-10" style="margin-left: 10px!important;">
+              
+              <!-- <div class="carousel-caption"> -->
+                <h2 style="color:black; font-weight: 800; margin-bottom: 10px!important"><strong>A Digital Agency which support brands in achieving their business goals.
+                </strong></h2>
+                <h4 class="font-res">Drive sales, Increase web traffic, generate leads and get return of your investment by advertising your brand digitally.</h4>
+              <!-- </div> -->
+            </div>
+      
+            <div class="item col-xs-10" style="margin-left: 10px!important;">
+              <!-- <img src="Images/main-slider/BANNER.JPG" alt="img2" class="img-fluid" style="width:100%; height: 80%;"> -->
+              <!-- <div class="carousel-caption"> -->
+               
+                <h2 style="color:black; font-weight: 800; margin-bottom: 10px!important"><strong> Work with a group of creative thinkers and specialists in Social Media Marketing.
+                </strong></h2>
+                <h4 class="font-res"> Build brand loyalty and engage customers with the help of our unique social media marketing strategies.</h4>
+            </div>
+          
+            <div class="item col-xs-10" style="margin-left: 10px!important;">
+              <!-- <img src="Images/main-slider/BANNER.JPG" alt="img3" class="img-fluid" style="width:100%; height: 80%;"> -->
+              <!-- <div class="carousel-caption"> -->
+                <h2 style="color:black; font-weight: 800; margin-bottom: 10px!important"><strong>Build a great online reputation for your brand with effective ORM techniques.</strong></h2>
+                <h4 class="font-res">Every business requires a great online reputation and positive reviews to create an understanding of trust in their customers.</h4>
+              <!-- </div> -->
+            </div>
+            
+          
+            <div class="item col-xs-10" style="margin-left: 10px!important;">
+                <!-- <img src="Images/main-slider/BANNER.JPG" alt="img3" class="img-fluid" style="width:100%; height: 80%;"> -->
+                <!-- <div class="carousel-caption"> -->
+                        
+                <h2 style="color:black; font-weight: 800; margin-bottom: 10px!important"><strong>Do not lose out on an incredible traffic; mobilize your business right now.</strong></h2>
+                <h4 class="font-res">Every day a massive amount of user access internet via mobile, this is why a mobile application for your brand is significant today.</h4>
+            <!-- </div> -->
+            </div>
+          </div>
+      
+          <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a> -->
+        </div>
+      </div>
+      
+
+    <section class="wellcome-section">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>What Inesh Offers</h2>
+                
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12" align="center">
+                    <?php 
+                        include("connect.php");
+                        $sql = 'SELECT * from `home_offers`';
+                        $result = $conn->query($sql);
+
+                        if ($result->num_rows > 0) {
+                            // output data of each row
+                            while($row = $result->fetch_assoc()) {
+                                echo htmlspecialchars_decode($row['content']);
+                            }
+                        }
+                            $conn->close();
+                    ?>
+<!--                     <p style="font-size:17px">From Web Development, Digital Marketing services to a full life cycle software development, we <br/> help businesses to become a world-class brand with our exceptional, industry-specific software <br/> solutions. With a focus on modern and prominent technologies, we support brands to raise <br/>productivity, untangle problems and enhance growth.</p>
+
+ -->                </div>
+                
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="item-holder text-center">
+                        <div class="icon-box">
+                            <img style="height: 50px; width:50px;" src="images/icons/marketing.png">
+                        </div>                           
+                        <div class="text">
+                            <a href="#"><h5>Marketing</h5></a>
+                            <ul>
+                                <li>SEO & Lead Generation</li>
+                                <li>Online advertising</li>
+                                <li>Social Media</li>
+                                <li>Content Marketing</li>
+                                <li>Video and Email Marketing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="item-holder text-center">
+                        <div class="icon-box">
+                            <img style="height: 50px; width:50px;"  src="images/icons/webservices.png">
+                        </div>                           
+                        <div class="text">
+                            <a href="#"><h5>Web Services</h5></a>
+                             <ul>
+                                <li>CMS Development</li>
+                                <li>E-commerce Development</li>
+                                <li>PHP Development</li>
+                                <li>Web  Application</li>
+                                <li>Logic & Graphic Designing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="item-holder text-center">
+                        <div class="icon-box">
+                            <img style="height: 50px; width:50px;" src="images/icons/mobapp.png">
+                        </div>                           
+                        <div class="text">
+                            <a href="#"><h5>Mobile App Development</h5></a>
+                            <ul>
+                                <li>UI/UX Design</li>
+                                <li>IOS Development</li>
+                                <li>Android Development</li>
+                                <li>App Prototype & Strategy</li>
+                                <li>Mobile App Maintenance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Wellcome Section-->
+
+
+    <!--Fact Counter-->
+    <div class="container-fluid" style="background-color: #f7f7f7">
+        <br/><br/>
+        <div class="section-title text-center">
+                <h2>Strategic thinking by Inesh</h2>
+                
+                
+            </div>
+            <br/>
+    </div>
+    <div class="row" style="background-color: #f7f7f7">
+        <div class="container col-xs-10 col-xs-offset-1"  align="justify">
+                    <?php 
+                        include("connect.php");
+                        $sql = 'SELECT * from `home_thinking`';
+                        $result = $conn->query($sql);
+
+                        if ($result->num_rows > 0) {
+                            // output data of each row
+                            while($row = $result->fetch_assoc()) {
+                                echo htmlspecialchars_decode($row['content']);
+                            }
+                        }
+                        $conn->close();
+                    ?>
+    <!-- <p style="font-size:17px">Strategy is the key of everything we perform. Inesh is a team of innovative and dedicated marketing experts and developers who work on all the modern technologies, Inesh creates a perfect strategy for every project and implement it while keeping the marketing trends in mind. Be it mobile, web or graphics we got your back, our team work as a true supporter with one and only focus of providing the best marketing results for your brand and to create a pathway to exceed your goals.</p> -->
+        </div>
+    </div>
+    <section class="fact-counter">
+        <div class="container">
+
+            <div class="row clearfix">
+                <div class="counter-outer clearfix">
+                    <!--Column-->
+                    <article class="column counter-column col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-duration="0ms">
+                        <div class="item">
+                            <div class="count-outer">
+                                <div class="icon">
+                                    <i class="flaticon-layers"></i>
+                                </div>                                
+                                <span >230+</span>
+                            </div>
+                            <h4 class="counter-title">Projects Done</h4>
+                        </div>                            
+                    </article>
+                    
+                    <!--Column-->
+                    <article class="column counter-column col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-duration="0ms">
+                        <div class="item">
+                            <div class="count-outer">
+                                <div class="icon">
+                                    <i class="flaticon-users"></i>
+                                </div>
+                                <span >99%</span>
+                            </div>
+                            <h4 class="counter-title">Satisfied Clients</h4>
+                        </div>
+                    </article>
+                    
+                    <!--Column-->
+                    <article class="column counter-column col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-duration="0ms">
+                        <div class="item">
+                            <div class="count-outer">
+                                <div class="icon">
+                                    <i class="flaticon-cup"></i>
+                                </div>
+                                <span >100%</span>
+                            </div>
+                            <h4 class="counter-title">Retention Ratio</h4>
+                        </div>
+                    </article>
+                    
+                    <!--Column-->
+                    <article class="column counter-column col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-duration="0ms">
+                        <div class="item">
+                            <div class="count-outer">
+                                <div class="icon">
+                                    <i class="flaticon-trophy"></i>
+                                </div>
+                                <span >24/7</span>
+                            </div>
+                            <h4 class="counter-title">Customer Support</h4>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Fact Counter-->
+
+    
+    <!--testimonials section-->
+
+
+    <br/><br/><br/>
+            <section style="background-color: #f7f7f7; width: 100%;">
+          <div class="container" >
+  <div class="section-title text-left">
+                <h2>Our Clients Say</h2>
+            </div>
+            <br/><br/><br/>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" style="font-size: 15px;">
+      <div class="item active">
+       <p>It was a wonderful experience working with Inesh. They are very professional and always open to help with their 24/7 customer service. I would definitely work with them on my upcoming project.</p>
+                                <h5>Dan Kruss</h5>
+                                <span>Happy Client</span>
+      </div>
+
+      <div class="item">
+         <p>I feel so proud that I made my e-commerce website from Inesh enterprises. The work was done so professionally. I had few ideas and implemented on it and the crew suggested me about the website and it really did worked. The prices are unbeatable, I searched the market for about 1 month and I never found such prices and unmatchable services. 
+I really do recommend this place. I wish you guys all the luck for future. And thanks for your business with you.</p>
+                                <h5>Sandy Khing</h5>
+                                <span>Happy Client</span>
+             </div>
+    
+      <div class="item">
+          <p>I would highly recommend this company to people who want their business online and in social platform. Inesh have provided me excellent web development and digital marketing service.  Great Professionals, Reasonable Cost and On Time Delivery, it was a great experience with them.</p>
+                                <h5>Shivani Juyal</h5>
+                                <span>Happy Client</span>
+      </div>
+      <div class="item">
+          <p>One of the best we have ever worked with. Our website looks super amazing and the credit goes to them. Best part is their highly professional attitude as they are not done till they are actually done.</p>
+                                <h5>Shashank Bakshi</h5>
+                                <span>Happy Client</span>
+
+      </div>
+      <div class="item">
+            <p>Being an owner of a start-up, I wanted someone with the expertise of understanding a client's requirements at once and delivering in a short span of time. Inesh didn't just impress me with their thorough knowledge of the subject but also their response time to changes that I kept asking for. HIGHLY RECOMMENDED!!</p>
+                                <h5>Sahil Bakshi</h5>
+                                <span>Happy Client</span>
+      </div>
+      <br/><br/><br/>
+</div></div></div></div>
+</section>
+
+<!--
+    
+    <section class="gallery-section">
+        <div class="container-fluid">
+            <div class="row clearfix">
+                <article class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="item">
+                        <img src="images/gallery/1.jpg" alt="">
+                        <div class="overlay">
+                            <h5>Web Development</h5>
+                            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtempor incid.</p>
+                            <a href="#"><i class="flaticon-right-arrow"></i></a>
+                        </div>                    
+                    </div>
+                </article> 
+                <article class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="item">
+                        <img src="images/gallery/2.jpg" alt="">
+                        <div class="overlay">
+                            <h5>Web Development</h5>
+                            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtempor incid.</p>
+                            <a href="#"><i class="flaticon-right-arrow"></i></a>
+                        </div>
+                    </div>
+                </article> 
+                <article class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="item">
+                        <img src="images/gallery/3.jpg" alt="">
+                        <div class="overlay">
+                            <h5>Web Development</h5>
+                            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtempor incid.</p>
+                            <a href="#"><i class="flaticon-right-arrow"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="item">
+                        <img src="images/gallery/4.jpg" alt="">
+                        <div class="overlay">
+                            <h5>Web Development</h5>
+                            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtempor incid.</p>
+                            <a href="#"><i class="flaticon-right-arrow"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="item">
+                        <img src="images/gallery/5.jpg" alt="">
+                        <div class="overlay">
+                            <h5>Web Development</h5>
+                            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtempor incid.</p>
+                            <a href="#"><i class="flaticon-right-arrow"></i></a>
+                        </div>                    
+                    </div>
+                </article> 
+                <article class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="item">
+                        <img src="images/gallery/6.jpg" alt="">
+                        <div class="overlay">
+                            <h5>Web Development</h5>
+                            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtempor incid.</p>
+                            <a href="#"><i class="flaticon-right-arrow"></i></a>
+                        </div>
+                    </div>
+                </article> 
+                <article class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="item">
+                        <img src="images/gallery/7.jpg" alt="">
+                        <div class="overlay">
+                            <h5>Web Development</h5>
+                            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtempor incid.</p>
+                            <a href="#"><i class="flaticon-right-arrow"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="item">
+                        <img src="images/gallery/8.jpg" alt="">
+                        <div class="overlay">
+                            <h5>Web Development</h5>
+                            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtempor incid.</p>
+                            <a href="#"><i class="flaticon-right-arrow"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+   
+-->
+
+   <br/><br/><br/>
+    <section class="choose-us">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Why work with Inesh?</h2>
+            </div>
+            <div class="col-lg-12 col-md-12 col-xs-12">
+                <div class="text">
+                    <p>For more than 5 years our digital marketing team have learnt to a great extent by working with many clients from small home based businesses to multi-national across all industries. </p>
+                </div>
+                <div class="content-text">
+                    <p>With all of that knowledge, our team has become specialists in their relevant fields be it in SEO, Social Media Marketing, PPC or Online Reputation Management. We are immensely proud of our huge client retention ratio, which is only achieved because of our consistent results! We are very positive in what we can attain; our services are supple and give you the freedom to choose one according to your needs, we have no fixed packages and our clients are free to customize the services with the help of our sales team. We provide assurance to all our digital and online marketing clients to see a positive return on investment (ROI) within a few months of initiating the online marketing campaigns with us. We work with defined strategies and KPI’s to measure the advancement and we share the same with our clients too.</p>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </section>
+    <!--End Choose Us-->
+
+
+    <!--Cta Section-->
+    <section class="cta-section" style="background: url(images/background/lookmarket.png); height: 500px; background-color: #A9A9A9">
+        <div class="container">
+          
+            <h2>Looking For Exclusive Marketing Services?</h2>
+            <div class="link-btn">
+                <a href="#" class="btn-style-one" style="color: white; background-color:#E13737;border: 1px solid #E13737">Get Free SEO Analysis</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="technology">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Technology</h2>
+            </div>
+            <div class="col-lg-12 col-md-12 col-xs-12">
+                <div class="text text-center">
+                    <p>Inesh’s team of creative thinkers, innovative workers, designers, strategists and analysts are aware of modern and prominent technologies which will serve your needs to the fullest.</p>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </section>
+   
+    <div class="container-fluid" style="margin-top: -160px;">
+        <br/><br/>
+        <div class="row" align="center">
+            <img class="img-fluid" src="img/tech.jpg">
+            <!--
+            <div class="col-xs-4 col-sm-4 col-md-3"><img style="height: 60px; margin: 10px!important;width: 60px; margin-left:-20px; " src="img/android.png" class="tech-img-max-hw" alt=""> </div>
+            <div class="col-xs-4 col-sm-4 col-md-3" ><img style="height: 60px;margin: 10px!important; width: 60px; margin-left: -20px;" src="img/js.png" class="tech-img-max-hw" alt=""> </div>
+            <div class="col-xs-4 col-sm-4 col-md-3"><img style="height: 60px; margin: 10px!important;width: 60px;" src="img/wordpress.png" class="tech-img-max-hw" alt=""></div>
+            <div class="col-xs-4 col-sm-4 col-md-3"><img style="height: 60px; margin: 10px!important;width: 60px; margin-left: -20px;" src="img/vue.png" class="tech-img-max-hw" alt=""></div>
+            <div class="col-xs-4 col-sm-4 col-md-3 "><img style="height: 60px;margin: 10px!important; width: 60px; margin-left: -20px;" src="img/angular.png" class="tech-img-max-hw" alt=""> </div>
+            <div class="col-xs-4 col-sm-4 col-md-3"><img style="height: 60px; margin: 10px!important;width: 60px; margin-left: -20px;" src="img/laravel.png" class="tech-img-max-hw" alt=""> </div>
+           
+        
+        
+            <div class="col-xs-4 col-sm-4 col-md-3"><img style="height: 60px; margin: 10px!important;width: 60px;" src="img/react.png" class="tech-img-max-hw" alt=""></div>
+            <div class="col-xs-4 col-sm-4 col-md-3"><img style="height: 60px; margin: 10px!important;width: 60px;" src="img/firebase.png" class="tech-img-max-hw" alt=""></div>
+            <div class="col-xs-4 col-sm-4 col-md-3"><img style="height: 60px; margin: 10px!important;width: 60px;" src="img/java.png" class="tech-img-max-hw" alt=""></div>
+            <div class="col-xs-4 col-sm-4 col-md-3"><img style="height: 60px; margin: 10px!important;width: 60px;" src="img/nodejs.png" class="tech-img-max-hw" alt=""></div>
+            <div class="col-xs-4 col-sm-4 col-md-3"><img style="height: 60px; margin: 10px!important;width: 60px;" src="img/mysql.png" class="tech-img-max-hw" alt=""></div>
+            <div class="col-xs-4 col-sm-4 col-md-3" ><img style="height: 60px;margin: 10px!important; width: 60px;" src="img/php.png" class="tech-img-max-hw" alt=""></div>
+            -->
+        </div>
+        <br/><br/>
+    </div>
+
+   
+    <!--
+    <section class="blog-section">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Blogs</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="item-holder">
+                        <div class="image-box">
+                            <figure>
+                                <a href="single-blog.html"><img src="images/blog/1.jpg" alt=""></a>
+                            </figure>
+                            <div style="background-color:#E13737;border: 1px solid #E13737" class="date-box">
+                                <span>25 feb, 2017</span>
+                            </div>
+                        </div>
+                        <div class="text-area">
+                            <div class="content-text text-center">
+                                <div class="sec-title">
+                                    <a href="single-blog.html"><h5>Cras sed elit sit amet.</h5></a>
+                                </div>
+                                <div class="text">
+                                    <p>Excepteur sint occaecat cupidatat  proident sunt culpa qui officia deserunt mollit anmlab rum. Sed perspiciatis unde.</p>
+                                </div>                            
+                            </div>
+                            <div class="blog-info clearfix">
+                                <div class="left-side pull-left">
+                                    <div class="info"><i class="fa fa-user" aria-hidden="true"></i>admin</div>
+                                </div>
+                                <ul class="right-side pull-right">
+                                    <li><i class="fa fa-heart-o" aria-hidden="true"></i>350</li>
+                                    <li><i class="fa fa-comments-o" aria-hidden="true"></i>30</li>
+                                </ul>                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="item-holder">
+                        <div class="image-box">
+                            <figure>
+                                <a href="single-blog.html"><img src="images/blog/2.jpg" alt=""></a>
+                            </figure>
+                            <div style="color: white; background-color:#E13737;border: 1px solid #E13737" class="date-box">
+                                <span>25 feb, 2017</span>
+                            </div>
+                        </div>
+                        <div class="text-area">
+                            <div class="content-text text-center">
+                                <div class="sec-title">
+                                    <a href="single-blog.html"><h5>Cras sed elit sit amet.</h5></a>
+                                </div>
+                                <div class="text">
+                                    <p>Excepteur sint occaecat cupidatat  proident sunt culpa qui officia deserunt mollit anmlab rum. Sed perspiciatis unde.</p>
+                                </div>                            
+                            </div>
+                            <div class="blog-info clearfix">
+                                <div class="left-side pull-left">
+                                    <div class="info"><i class="fa fa-user" aria-hidden="true"></i>admin</div>
+                                </div>
+                                <ul class="right-side pull-right">
+                                    <li><i class="fa fa-heart-o" aria-hidden="true"></i>350</li>
+                                    <li><i class="fa fa-comments-o" aria-hidden="true"></i>30</li>
+                                </ul>                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="item-holder">
+                        <div class="image-box">
+                            <figure>
+                                <a href="single-blog.html"><img src="images/blog/3.jpg" alt=""></a>
+                            </figure>
+                            <div style="color: white; background-color:#E13737;border: 1px solid #E13737" class="date-box">
+                                <span>25 feb, 2017</span>
+                            </div>
+                        </div>
+                        <div class="text-area">
+                            <div class="content-text text-center">
+                                <div class="sec-title">
+                                    <a href="single-blog.html"><h5>Cras sed elit sit amet.</h5></a>
+                                </div>
+                                <div class="text">
+                                    <p>Excepteur sint occaecat cupidatat  proident sunt culpa qui officia deserunt mollit anmlab rum. Sed perspiciatis unde.</p>
+                                </div>                            
+                            </div>
+                            <div class="blog-info clearfix">
+                                <div class="left-side pull-left">
+                                    <div class="info"><i class="fa fa-user" aria-hidden="true"></i>admin</div>
+                                </div>
+                                <ul class="right-side pull-right">
+                                    <li><i class="fa fa-heart-o" aria-hidden="true"></i>350</li>
+                                    <li><i class="fa fa-comments-o" aria-hidden="true"></i>30</li>
+                                </ul>                                    
+                            </div>
+                        </div>                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-xs-12">
+                    <div class="left-side">
+                        <form id="contact_form" name="contact_form" action="sendmail.php" method="post">
+                            <div class="form-group">
+                                <input type="text" name="form_name" class="form-control" value="" placeholder="Your Name" required="">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="form_phone" class="form-control" value="" placeholder="Phone" required="">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="form_message" class="form-control textarea required" placeholder="Your Text"></textarea>
+                            </div>
+                            <div class="form-group form-bottom">
+                                <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">
+                                <button style="color: white; background-color:#E13737;border: 1px solid #E13737" class="btn-style-one" type="submit" data-loading-text="Please wait...">send message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-xs-12">
+                    <div class="right-side">
+                        <div class="text">
+                            <p>We are ready to guide you into the future of digital marketing. Reach out to us for more information, answer of any question and expect an exceptional customer service which we would want to experience ourselves!</p>
+                        </div>
+                        <ul>
+                            <li><i style="color:#E13737" class="fa fa-map-marker" aria-hidden="true"></i>26 Country ridge court, Brampton, ON L6P 3S2, Canada</li>
+                            <li><i style="color:#E13737" class="fa fa-phone" aria-hidden="true"></i><img src="img/canada.png" style="width: 14px; height: 10px;"> +1 (647) 297-3837<br/>
+                                <img src="img/usa.png" style="width: 14px; height: 10px;"> +1 (510) 400-4818<br/>
+                                <img src="img/india.png" style="width: 14px; height: 10px;"> +91 9999 122 634</li>
+                            <li><i style="color:#E13737" class="fa fa-envelope" aria-hidden="true"></i>info@inesh.org</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+
+
+    <!-- 
+    <section class="map-section">
+        <div class="container-fulid">
+            <div class="google-map-area">
+                <div 
+                    class="google-map" 
+                    id="contact-google-map"
+                    data-map-lat="45.355985" 
+                    data-map-lng="-72.934990" 
+                    data-icon-path="images/icons/map-marker.png" 
+                    data-map-title="Ange-Gardien, London, United Kingdom" 
+                    data-map-zoom="8" 
+                    data-markers='{
+                        "marker-1": [45.355985, -72.934990, "<h4>Head Office</h4><p>44/108 Ange-Gardien, UK</p>"]
+                    }'>
+                </div>
+            </div>
+        </div>
+    </section>
+ -->
+
+
+    <!--Subscribe Section-->
+  <div id="footer1"></div>
+   
+
+
+</div>
+<!--End pagewrapper-->
+
+<!--Search Popup-->
+
+
+<!--Scroll to top-->
+<!-- <div class="scroll-to-top scroll-to-target" data-target=".header-top"><span class="icon fa fa-angle-up"></span></div> -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script>
+<script src="js/html5lightbox.js"></script>
+<script src="js/isotope.js"></script> 
+
+
+<!-- revolution slider js -->
+<script src="assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/wow.js"></script>
+
+<!-- gmap helper -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHzPSV2jshbjI8fqnC_C4L08ffnj5EN3A"></script>
+<!--gmap script-->
+<script src="js/gmaps.js"></script>
+<script src="js/map-helper.js"></script>
+
+<!-- bxslider -->
+<script src="js/jquery.appear.js"></script>
+<script src="js/jquery.countTo.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
