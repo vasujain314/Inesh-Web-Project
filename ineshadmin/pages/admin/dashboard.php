@@ -36,6 +36,25 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+  <?php
+ include("connect.php");
+ $result="";
+if(isset($_POST['delcheck'])) {
+  $table = $con->real_escape_string($_POST['table']);
+$content  = $con->real_escape_string($_POST['content']);
+
+
+$sql="INSERT INTO $table (content) VALUES ('".$content."')";
+
+if(!$result = $con->query($sql)){
+die('There was an error running the query [' . $con->error . ']');
+}
+else{
+    $result="DUE HAS BEEN SUBMITTED AGAINST ";
+}
+}
+?>
+
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -78,8 +97,10 @@ document.getElementById("bulkmail").className = "active treeview";
 	}
 ?>	
 <div class="row" >
+
  <div class="col-xs-12" >
  <div class="box">
+
             <div class="box-header" >
               <h3 class="box-title">Add Content</h3><br /><br />
 			 
@@ -87,11 +108,17 @@ document.getElementById("bulkmail").className = "active treeview";
             <!-- /.box-header -->
            <div class="box-body col-xs-12" style="overflow:auto">
 		    <form method="post" action = "<?php echo $_SERVER["PHP_SELF"];?>" enctype="multipart/form-data">
+          <div class="form-group">
+          <select name="table">
+    <option value="home_offers" >home_offers</option>
+    <option value="home_whatwedo" >home_whatwedo</option>
+    </select>
+  </div>
 		   <div class="col-xs-7">
 	
 	 
 		   <div class="form-group">
-		   <textarea class="form-control" id="editor1" name="body" placeholder ="Message Body" rows="5" required></textarea>
+		   <textarea class="form-control" id="editor1" name="content" placeholder ="Message Body" rows="5" required></textarea>
 		   </div>
 		    
 		   </div>
@@ -100,6 +127,7 @@ document.getElementById("bulkmail").className = "active treeview";
 			  <input type="submit" name="delcheck"   value="Add Content" class="btn btn-primary">
 			  </div>
             </div>
+          </form>
             </div>
             <!-- /.box-body -->
           </div>
