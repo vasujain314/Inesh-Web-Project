@@ -47,7 +47,7 @@
                             </ul>
                         </li> 
                          <li><a href="ourwork.html">Our Work</a></li>                  
-                        <li class="dropdown"><a href="marketing.html" onclick="window.location='contact.html'">Contact us</a>
+                        <li class="dropdown"><a href="contact" onclick="window.location='contact.php'">Contact us</a>
                             <ul style="color: white;">
                                 <li> &nbsp;<img src="img/canada.png" style="width: 13px; height: 13px;"> +1 (647) 297-3837</li>
                                 <li> &nbsp;<img src="img/usa.png" style="width: 13px; height: 13px;"> +1 (510) 400-4818</li>

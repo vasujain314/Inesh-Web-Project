@@ -1,3 +1,62 @@
+<?php
+$result="";
+
+
+
+if(isset($_POST['submit']))
+{
+  require 'PHPMailerAutoload.php';
+require 'credential.php';
+$mail = new PHPMailer;
+$name = $_POST['name'];
+$visitor_email = $_POST['email'];
+$visitor_phone =$_POST['phone'];
+$message = $_POST['message'];
+$email_from = '$visitor_email';
+$email_subject = "Some one contacted.";
+$email_body = "You have received a new message from the user: $name \n contact no: $visitor_phone \n mail: $visitor_email .\n"."Here is the message:\n $message".
+
+
+// $mail->SMTPDebug = 4;                               // Enable verbose debug output
+
+$mail->isSMTP();                                      // Set mailer to use SMTP
+$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+$mail->SMTPAuth = true;                               // Enable SMTP authentication
+$mail->Username = EMAIL;                 // SMTP username
+$mail->Password = pass;                           // SMTP password
+$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 587;                                    // TCP port to connect to
+
+$mail->setFrom('info@inesh.org', 'Mailer');
+$mail->addAddress('info@inesh.org');     // Add a recipient
+
+$mail->addReplyTo($visitor_email);
+
+
+
+$mail->isHTML(true);                                  // Set email format to HTML
+
+$mail->Subject = $email_subject;
+$mail->Body    = $email_body;
+
+if(!$mail->send()) {
+    $result="some error has occured please reach us through mail";
+} else {
+    $result="Thanks ".$name." we will respond you back.";
+}
+
+}
+?>
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -58,17 +117,17 @@ $("#footer1").load("footer.php");
                     <div class="left-side">
                         <form id="contact_form" name="contact_form" action="sendmail.php" method="post">
                             <div class="form-group">
-                                <input type="text" name="form_name" class="form-control" value="" placeholder="Your Name" required="">
+                                <input type="text" name="name" class="form-control" value="" placeholder="Your Name" required="">
                             </div>
                             <div class="form-group">
-                                <input type="text" name="form_phone" class="form-control" value="" placeholder="Phone" required="">
+                                <input type="text" name="phone" class="form-control" value="" placeholder="Phone" required="">
                             </div>
                             <div class="form-group">
-                                <textarea name="form_message" class="form-control textarea required" placeholder="Your Text"></textarea>
+                                <textarea name="message" class="form-control textarea required" placeholder="Your Text"></textarea>
                             </div>
                             <div class="form-group form-bottom">
                                 <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">
-                                <button class="btn-style-one" type="submit" data-loading-text="Please wait...">send message</button>
+                                <button class="btn-style-one" name="submit" type="submit" data-loading-text="Please wait...">send message</button>
                             </div>
                         </form>
                     </div>

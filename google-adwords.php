@@ -26,6 +26,7 @@
 $(function(){
 $("#header1").load("header.php");
 $("#footer1").load("footer.php");
+$("#modal23").load("modal.php");
 });
     </script>
 </head>
@@ -82,42 +83,7 @@ $("#footer1").load("footer.php");
             </div>     
         </div>
 
-   <div class="modal fade" id="myModal" role="dialog" style="z-index: 9999999; margin-top: 8%;">
-                            <div class="modal-dialog modal-lg">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                  <h4 class="modal-title" style="text-align: center;">Request a Quote<br/>(Complete This form)</h4>
-                              </div>
-                              <div class="modal-body">
-                               <div class="container" style="width: 80%;">
-                                 <form action="">
-                                    <div class="form-group">
-                                      <label for="pwd">Name</label>
-                                      <input type="name" class="form-control" id="pwd" placeholder="Enter Name" name="name">
-                                  </div>
-                                   <div class="form-group">
-                                      <label for="email">Email:</label>
-                                      <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
-                                  </div>
-                                  
-                                    <div class="form-group">
-                                      <label for="pwd">Phone</label>
-                                      <input type="phone" class="form-control" id="pwd" placeholder="Enter phone no." name="phone">
-                                  </div>
-                                  <div class="form-group">
-                                      <label for="pwd">Message</label>
-                                      <input type="message" class="form-control" id="pwd" placeholder="Message For Our Experts" name="msg">
-                                  </div>
-                                  <button type="submit" class="btn btn-default" style="background-color: #E13737; color: white;">Submit</button>
-                              </form>
-                          </div>
-                      </div>
-                              
-                          </div>
-                      </div>
-                  </div>
-              </div>
+  <div id="modal23"></div>
         <br/><br/><br/>
     <div class="container" >
     <div class="row">
@@ -610,39 +576,7 @@ Managing your pay-per-click campaigns is also a very important factor. Once you 
         </div>
     </div>
 </div>
-  <div class="modal fade" id="mymodal" role="dialog" style="z-index: 9999999; margin-top: 8%;">
-                            <div class="modal-dialog modal-lg">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                  <h4 class="modal-title" style="text-align: center;">Order Inesh Services<br/>(Complete This form)</h4>
-                              </div>
-                              <div class="modal-body">
-                               <div class="container" style="width: 80%;">
-                                 <form action="">
-                                    <div class="form-group">
-                                      <label for="pwd">Name</label>
-                                      <input type="name" class="form-control" id="pwd" placeholder="Enter Name" name="name">
-                                  </div>
-                                   <div class="form-group">
-                                      <label for="email">Email:</label>
-                                      <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
-                                  </div>
-                                  
-                                    <div class="form-group">
-                                      <label for="pwd">Phone</label>
-                                      <input type="phone" class="form-control" id="pwd" placeholder="Enter phone no." name="phone">
-                                  </div>
-                                 
-                                  <button type="submit" class="btn btn-default" style="background-color: #E13737; color: white;">Submit</button>
-                              </form>
-                          </div>
-                      </div>
-                              
-                          </div>
-                      </div>
-                  </div>
-              </div>
+  <div id="modal23"></div>
 
 <div id="footer1"></div>
 <!--Scroll to top-->
