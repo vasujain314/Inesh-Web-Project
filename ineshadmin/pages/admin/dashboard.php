@@ -49,9 +49,7 @@ $sql="INSERT INTO $table (content) VALUES ('".$content."')";
 if(!$result = $con->query($sql)){
 die('There was an error running the query [' . $con->error . ']');
 }
-else{
-    $result="DUE HAS BEEN SUBMITTED AGAINST ";
-}
+
 }
 ?>
 
@@ -111,7 +109,38 @@ document.getElementById("bulkmail").className = "active treeview";
           <div class="form-group">
           <select name="table">
     <option value="home_offers" >home_offers</option>
-    <option value="home_whatwedo" >home_whatwedo</option>
+    <option value="home_thinking" >home_thinking</option>
+    <option value="about_mission" >about_mission</option>
+    <option value="about_whatwedo" >about_whatwedo</option>
+    <option value="about_whyus" >about_whyus</option>
+    <option value="contentmkt_main" >contentmkt_main</option>
+    <option value="contentmkt_overview" >contentmkt_overview</option>
+    <option value="ecomm_delieverftre" >ecomm_delieverftre</option>
+    <option value="ecomm_main" >ecomm_main</option>
+    <option value="email_main" >email_main</option>
+    <option value="email_overview" >email_overview</option>
+    <option value="graphic_main" >graphic_main</option>
+    <option value="graphic_overview" >graphic_overview</option>
+    <option value="home_whywork" >home_whywork</option>
+    <option value="lead_main" >lead_main</option>
+    <option value="lead_overview" >lead_overview</option>
+    <option value="mobile_main" >mobile_main</option>
+    <option value="mobile_other" >mobile_other</option>
+    <option value="mobile_overview" >mobile_overview</option>
+    <option value="ppc_main" >ppc_main</option>
+    <option value="ppc_overview" >ppc_overview</option>
+    <option value="reputation_main" >reputation_main</option>
+    <option value="reputation_overview" >reputation_overview</option>
+     <option value="seo_main" >seo_main</option>
+    <option value="seo_overview" >seo_overview</option>
+     <option value="socialmed_main" >socialmed_main</option>
+    <option value="socialmed_overview" >socialmed_overview</option>
+     <option value="video_main" >video_main</option>
+    <option value="video_overview" >video_overview</option>
+     <option value="video_benefitmkt" >video_benefitmkt</option>
+    <option value="video_developmkt" >video_developmkt</option>
+     <option value="webdev_main" >webdev_main</option>
+    <option value="webdev_overview" >webdev_overview</option>
     </select>
   </div>
 		   <div class="col-xs-7">
