@@ -48,20 +48,7 @@ $("#modal23").load("modal.php");
                 <div class="col-sm-6">
                     
                     <p class="my-3 text-justify">
-                       <!-- Online reputation management (ORM) means control over online conversations. Its techniques and strategies ensure that people find the right content of yours on the Internet. The purpose of Online Reputation Management is to balance combat deceptive trends and keep your best foot forward. -->
-                  <?php 
-                      include("connect.php");
-                      $sql = 'SELECT * from `reputation_main`';
-                      $result = $conn->query($sql);
-
-                      if ($result->num_rows > 0) {
-                          // output data of each row
-                          while($row = $result->fetch_assoc()) {
-                              echo htmlspecialchars_decode($row['content']);
-                          }
-                      }
-                      $conn->close();
-                  ?>
+                       Online reputation management (ORM) means control over online conversations. Its techniques and strategies ensure that people find the right content of yours on the Internet. The purpose of Online Reputation Management is to balance combat deceptive trends and keep your best foot forward.
                     </p>
                     <br/>
                     <h3 style="color: black; margin-bottom: 10px!important;"><b>Why should you care about your online reputation?</b></h3>
@@ -88,26 +75,11 @@ $("#modal23").load("modal.php");
         <div class="section-title" style="margin-bottom: 4rem;">
                     <h2 class="text-center">Overview</h2>
                 </div>
-                <p class="text-center">
-                 <!--  60% of hiring managers rejects a candidate because they found something about them online. When looking for a local business, almost 90% of people read online reviews. The loss of reputation over 75% comes from a mismatch between discussion and reality. Looking at the figures like these, it is clear that what happens online affects your whole life.
+                <p class="text-center">60% of hiring managers rejects a candidate because they found something about them online. When looking for a local business, almost 90% of people read online reviews. The loss of reputation over 75% comes from a mismatch between discussion and reality. Looking at the figures like these, it is clear that what happens online affects your whole life.
 
 With each passing day, the online world becomes more and more alive with our remaining activities. From smartphones to smart TVs, from "Internet of Things" to future self-driving cars - you're living online every day, even if you never touch the computer. This means that there are more ways to leave an online mark for you, either positive or negative.
 
-Now, you cannot think that people are searching for you, but there is a possibility that they are. -->
-                  <?php 
-                      include("connect.php");
-                      $sql = 'SELECT * from `reputation_overview`';
-                      $result = $conn->query($sql);
-
-                      if ($result->num_rows > 0) {
-                          // output data of each row
-                          while($row = $result->fetch_assoc()) {
-                              echo htmlspecialchars_decode($row['content']);
-                          }
-                      }
-                      $conn->close();
-                  ?>
-</p>
+Now, you cannot think that people are searching for you, but there is a possibility that they are.</p>
     </div>
 </div>
 <br/>

@@ -41,23 +41,10 @@ $("#footer1").load("footer.php");
         <div class="container">
             <div class="section-title text-center">
                 <h2>Who We Are & What We Do?</h2>
-     <!--            <p>Inesh is web marketing, analytics and an optimization company with an office in Ontario, Canada (ON) and offshore office New Delhi, India (IN). We help businesses precisely track their advertising results and get more sales, leads and revenue from the internet through digital marketing. We adopt a custom approach for each customer to ensure that our strategies connect with their unique business goals and objectives.
+                <p>Inesh is web marketing, analytics and an optimization company with an office in Ontario, Canada (ON) and offshore office New Delhi, India (IN). We help businesses precisely track their advertising results and get more sales, leads and revenue from the internet through digital marketing. We adopt a custom approach for each customer to ensure that our strategies connect with their unique business goals and objectives.
                     <br/>
                     If you are a business owner, have ambitious development goals, and are looking for a terrific partner to help you improve your marketing performance to get more leads and revenue from the internet, then you come to the perfect place.
-                </p> -->
-                    <?php 
-                        include("connect.php");
-                        $sql = 'SELECT * from `about_whatwedo`';
-                        $result = $conn->query($sql);
-
-                        if ($result->num_rows > 0) {
-                            // output data of each row
-                            while($row = $result->fetch_assoc()) {
-                                echo htmlspecialchars_decode($row['content']);
-                            }
-                        }
-                        $conn->close();
-                    ?>
+                </p>
             </div>
             <div class="row"> 
           <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
@@ -190,20 +177,7 @@ $("#footer1").load("footer.php");
             <div class="col-lg-12 col-md-12 col-xs-12">
     
                 <div class="content-text">
-                    <?php 
-                        include("connect.php");
-                        $sql = 'SELECT * from `about_whyus`';
-                        $result = $conn->query($sql);
-
-                        if ($result->num_rows > 0) {
-                            // output data of each row
-                            while($row = $result->fetch_assoc()) {
-                                echo htmlspecialchars_decode($row['content']);
-                            }
-                        }
-                        $conn->close();
-                    ?>
- <!--                    <p><strong style="color: black;">We have only one goal:</strong> Help business owners and marketing executives use technology and the Internet and improve their marketing performance and Return on Investment (ROI). It starts with an accurate tracking of each advertising strategy - even if your only strategy is your company's website. Tracking will give you insights which are never-seen-before, it would be about your business and will change the way your ads and marketing are viewed forever. Data from tracking and analysis of the website shared by Inesh will authorize you to eliminate ineffective advertising strategies and quickly identify new marketing strategies that have the potential to help you develop your business more effectively. You will get opportunities to get more output from your website-like strategies. Inesh has helped dozens of companies’ double, triple, and even quadruple their website's hit-to-lead conversion rates.<br/>
+                    <p><strong style="color: black;">We have only one goal:</strong> Help business owners and marketing executives use technology and the Internet and improve their marketing performance and Return on Investment (ROI). It starts with an accurate tracking of each advertising strategy - even if your only strategy is your company's website. Tracking will give you insights which are never-seen-before, it would be about your business and will change the way your ads and marketing are viewed forever. Data from tracking and analysis of the website shared by Inesh will authorize you to eliminate ineffective advertising strategies and quickly identify new marketing strategies that have the potential to help you develop your business more effectively. You will get opportunities to get more output from your website-like strategies. Inesh has helped dozens of companies’ double, triple, and even quadruple their website's hit-to-lead conversion rates.<br/>
                         But the exact measurement and tracking (marketing analytics) is the foundation and the first step towards improving your marketing - and how much technology can be exposed to your business, it is constantly progressing.
                     </p>
                 </div>
@@ -211,7 +185,7 @@ $("#footer1").load("footer.php");
                 <div class="content-text">
                     <p><strong style="color: black;">Industries we Serve: </strong>
                       Although almost any type of business can take advantage of the Internet as a sales and marketing tool, and can benefit from accurate advertising tracking and marketing measurement, business-to-consumer service-type businesses get more profit by this strategy. Currently, customers of Inesh come from almost every B2C service industry - from clean energy, solar panels, plumbing, healthcare to roof companies and HVAC. We have many bottled water distribution companies and many big pipeline companies. If you invest in advertising or have a website, then Inesh can certainly help you to increase your performance. Increasing performance increases your investment in our service, which is ultimately the end goal of every marketing agency. 
-                    </p> -->
+                    </p>
                 </div>
             </div>
             </div>
@@ -230,22 +204,9 @@ $("#footer1").load("footer.php");
             <div class="col-lg-12 col-md-12 col-xs-12">
     
                 <div class="content-text">
-                 <!--    <p>We want to win your "trust". We are dedicated to providing efficient services to our valued customers in the field of Information Technology; we strive for your satisfaction and support. We want to provide high quality, need-oriented, cost-cutting, innovative and value-added software and web solutions that meet your needs. We are committed to creating an ever-rewarding Internet entity for ambitious companies, whose aim is to keep pace with today's fast-moving e-times; our aim is to facilitate the development of your organization.<br/>
+                    <p>We want to win your "trust". We are dedicated to providing efficient services to our valued customers in the field of Information Technology; we strive for your satisfaction and support. We want to provide high quality, need-oriented, cost-cutting, innovative and value-added software and web solutions that meet your needs. We are committed to creating an ever-rewarding Internet entity for ambitious companies, whose aim is to keep pace with today's fast-moving e-times; our aim is to facilitate the development of your organization.<br/>
                         Our aim is to create tailored-fit solutions for businesses by unlocking the power of digitally powered services with a solid impact on the revenue of our client every given point in time. Our goal is to create a platform for SEO, SMM, ORM and other online marketing solutions to enter every corner of the world.
-                    </p> -->
-                    <?php 
-                        include("connect.php");
-                        $sql = 'SELECT * from `about_mission`';
-                        $result = $conn->query($sql);
-
-                        if ($result->num_rows > 0) {
-                            // output data of each row
-                            while($row = $result->fetch_assoc()) {
-                                echo htmlspecialchars_decode($row['content']);
-                            }
-                        }
-                        $conn->close();
-                    ?>
+                    </p>
                 </div>
                 <br/>
             <div class="container" style="margin-top: 12vh;">

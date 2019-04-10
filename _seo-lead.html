@@ -55,20 +55,7 @@ $("#modal23").load("modal.php");
                 <div class="col-sm-6 col-xs-12">
                 <p class="my-3 text-justify">
                    
-<!-- Search Engine Optimization is a process to improve your search rank by enhancing the quality of your website, content, optimization content, optimized images, page speed, website downloading speed etc. which in result increases organic traffic on your website.  Crawlers of search engines like Google, Yahoo or Bing lands at websites and gathers information about your business, service or product and then index that in search engine’s database and when a user searches for something then he sees your website in the results according to his/her search. In these search results, what is the ranking of your website plays a significant role because generally a user does not go on second or third page of any Search Engine and there are thousands of websites indexed for a particular niche. -->
-                  <?php 
-                      include("connect.php");
-                      $sql = 'SELECT * from `seo_main`';
-                      $result = $conn->query($sql);
-
-                      if ($result->num_rows > 0) {
-                          // output data of each row
-                          while($row = $result->fetch_assoc()) {
-                              echo htmlspecialchars_decode($row['content']);
-                          }
-                      }
-                      $conn->close();
-                  ?>
+Search Engine Optimization is a process to improve your search rank by enhancing the quality of your website, content, optimization content, optimized images, page speed, website downloading speed etc. which in result increases organic traffic on your website.  Crawlers of search engines like Google, Yahoo or Bing lands at websites and gathers information about your business, service or product and then index that in search engine’s database and when a user searches for something then he sees your website in the results according to his/her search. In these search results, what is the ranking of your website plays a significant role because generally a user does not go on second or third page of any Search Engine and there are thousands of websites indexed for a particular niche.
 
                 </p>
                 <div class="row text-center" id="buttonn">
@@ -92,22 +79,7 @@ $("#modal23").load("modal.php");
                     <h2 class="text-center ">Overview</h2>
                 </div>
                <div class="container" >
-                <p class=" text-center">
-                <!-- In order to get organic traffic, you need to be seen on early pages of search engine. And for good ranks one needs a perfectly strategized work on your website where team of Inesh acts as a catalyst to build the right strategy, to make the content according to your business and to choose the right keywords. -->
-                  <?php 
-                      include("connect.php");
-                      $sql = 'SELECT * from `seo_overview`';
-                      $result = $conn->query($sql);
-
-                      if ($result->num_rows > 0) {
-                          // output data of each row
-                          while($row = $result->fetch_assoc()) {
-                              echo htmlspecialchars_decode($row['content']);
-                          }
-                      }
-                      $conn->close();
-                  ?>
-              </p>
+                <p class=" text-center">In order to get organic traffic, you need to be seen on early pages of search engine. And for good ranks one needs a perfectly strategized work on your website where team of Inesh acts as a catalyst to build the right strategy, to make the content according to your business and to choose the right keywords.</p>
               </div>
 </div>
 <br/><br/>

@@ -68,20 +68,7 @@ $("#modal23").load("modal.php");
             <div class="row">
                 <div class="col-sm-6">
                     <p class="my-3 text-justify">
-                       <!-- Google Advertising, formerly known as Google AdWords - is the most popular PPC platform ever, which works on pay-per-click models, in which users bid on keywords and pays for each click on their ads. Whenever a search is started, Google digs into the bidders' advertising pool and chooses a set of winners to display in ad space on their search results page. Selection of winners is based on the combination of factors including the quality and relevance of their keywords and ad text as well as the size of their keyword bids. For example, if Inesh bids on the keyword "PPC software", then our ad may appear at the very top position on the Google results page. -->
-                  <?php 
-                      include("connect.php");
-                      $sql = 'SELECT * from `ppc_main`';
-                      $result = $conn->query($sql);
-
-                      if ($result->num_rows > 0) {
-                          // output data of each row
-                          while($row = $result->fetch_assoc()) {
-                              echo htmlspecialchars_decode($row['content']);
-                          }
-                      }
-                      $conn->close();
-                  ?>
+                       Google Advertising, formerly known as Google AdWords - is the most popular PPC platform ever, which works on pay-per-click models, in which users bid on keywords and pays for each click on their ads. Whenever a search is started, Google digs into the bidders' advertising pool and chooses a set of winners to display in ad space on their search results page. Selection of winners is based on the combination of factors including the quality and relevance of their keywords and ad text as well as the size of their keyword bids. For example, if Inesh bids on the keyword "PPC software", then our ad may appear at the very top position on the Google results page.
                     </p>
 
                    <div class="row text-center" id="buttonn">
@@ -103,21 +90,7 @@ $("#modal23").load("modal.php");
         <div class="section-title" style="margin-bottom: 4rem;">
                     <h2 class="text-center">Overview</h2>
                 </div>
-                <p class="text-center">
-                  <?php 
-                      include("connect.php");
-                      $sql = 'SELECT * from `ppc_overview`';
-                      $result = $conn->query($sql);
-
-                      if ($result->num_rows > 0) {
-                          // output data of each row
-                          while($row = $result->fetch_assoc()) {
-                              echo htmlspecialchars_decode($row['content']);
-                          }
-                      }
-                      $conn->close();
-                  ?>
-                  <!-- More specifically, what is seen on the page and where the advertiser's ad rank is based, the metric calculated by multiplying two key factors - the CPC bid (an advertiser who is willing to spend the maximum amount) and the quality score ( Which takes a value) between your click-through rate, relevance and landing page quality, among other factors). In return, your Quality Score affects your actual cost per click or CPC. This system allows advertisers to reach potential customers who fit their budget. -->
+                <p class="text-center">More specifically, what is seen on the page and where the advertiser's ad rank is based, the metric calculated by multiplying two key factors - the CPC bid (an advertiser who is willing to spend the maximum amount) and the quality score ( Which takes a value) between your click-through rate, relevance and landing page quality, among other factors). In return, your Quality Score affects your actual cost per click or CPC. This system allows advertisers to reach potential customers who fit their budget.
 Managing your pay-per-click campaigns is also a very important factor. Once you create your new campaign, you need to regularly manage them to make sure that they remain effective. In fact, the Regular Account Activity on your account is one of the best predictions of success. You should continually analyze the performance of your Google ads and your AdWords account - even make a big difference in just 20 minutes a week - and you can make the following adjustments to optimize your campaigns:
 </p>
     </div>

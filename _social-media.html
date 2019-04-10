@@ -64,22 +64,9 @@ $("#modal23").load("modal.php");
                 <div class="col-sm-6">
                     
                     <p class="my-3 text-justify">
-                      <!--  The process of gaining traffic, attention or branding of a product or service through social media sites is called social media marketing. 
+                       The process of gaining traffic, attention or branding of a product or service through social media sites is called social media marketing. 
                         probably you are not going to get any business from that user.
-                       Social media itself is a catch-all term for those sites which can fundamentally provide various social functions. For example, Twitter is a social site that is designed to make people share short messages or "updates" with others. On the contrary, Facebook is a fully developed social networking site that allows sharing updates, photos, joining events and many other activities. Social media is a powerful way for businesses of all sizes to reach marketing prospects and customers. -->
-                  <?php 
-                      include("connect.php");
-                      $sql = 'SELECT * from `socialmed_main`';
-                      $result = $conn->query($sql);
-
-                      if ($result->num_rows > 0) {
-                          // output data of each row
-                          while($row = $result->fetch_assoc()) {
-                              echo htmlspecialchars_decode($row['content']);
-                          }
-                      }
-                      $conn->close();
-                  ?>
+                       Social media itself is a catch-all term for those sites which can fundamentally provide various social functions. For example, Twitter is a social site that is designed to make people share short messages or "updates" with others. On the contrary, Facebook is a fully developed social networking site that allows sharing updates, photos, joining events and many other activities. Social media is a powerful way for businesses of all sizes to reach marketing prospects and customers.
                      </p>
                     <div class="row text-center" id="buttonn">
                         <button class="btn btn-lg btn-default" style="color: white; background-color:#E13737; border-radius: 0px!important; margin-top: 10vh; box-shadow: 1px 1px 1px 1px #E13737; border: 1px solid #E13737" data-toggle="modal" data-target="#myModal"> Request a quote&ensp;<span class="glyphicon glyphicon-arrow-right"></span>
@@ -101,22 +88,8 @@ $("#modal23").load("modal.php");
         <div class="section-title" style="margin-bottom: 4rem;">
                     <h2 class="text-center">Overview</h2>
                 </div>
-                <p class="text-center">
-                  Your potentia<!-- l customers are already communicating with brands through social media, and if you are not speaking directly to your audience through social media platforms like Facebook, Twitter, Instagram and Pinterest, then you are missing a huge aspect of marketing! Great marketing on social media can lead to remarkable success in your business, dedicated brand advocates and even driving leads and sales.
-Social media marketing is a form of online marketing which involves creating and sharing content on social media networks to achieve your marketing and branding goals. It involves actions like posting text, image updates, videos, and other content that increases user engagement, as well as paid social media ads. Before you start creating a social media marketing campaign, consider the goals of your business. Keeping a social strategy in mind, starting a social media marketing campaign is like roaming in a forest without a map - you may enjoy, but you might get lost. -->
-                  <?php 
-                      include("connect.php");
-                      $sql = 'SELECT * from `socialmed_overview`';
-                      $result = $conn->query($sql);
-
-                      if ($result->num_rows > 0) {
-                          // output data of each row
-                          while($row = $result->fetch_assoc()) {
-                              echo htmlspecialchars_decode($row['content']);
-                          }
-                      }
-                      $conn->close();
-                  ?>
+                <p class="text-center">Your potential customers are already communicating with brands through social media, and if you are not speaking directly to your audience through social media platforms like Facebook, Twitter, Instagram and Pinterest, then you are missing a huge aspect of marketing! Great marketing on social media can lead to remarkable success in your business, dedicated brand advocates and even driving leads and sales.
+Social media marketing is a form of online marketing which involves creating and sharing content on social media networks to achieve your marketing and branding goals. It involves actions like posting text, image updates, videos, and other content that increases user engagement, as well as paid social media ads. Before you start creating a social media marketing campaign, consider the goals of your business. Keeping a social strategy in mind, starting a social media marketing campaign is like roaming in a forest without a map - you may enjoy, but you might get lost.
 </p>
     </div>
 </div>

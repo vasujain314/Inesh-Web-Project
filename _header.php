@@ -6,7 +6,7 @@
         <div class="container-fluid clearfix">
             <div class="logo"  style="z-index: 999999999;">
             
-                    <a href="index.php"  ><img  style="margin-top:10px; width: 150px;"  src="images/logo.png" alt=""></a>
+                    <a href="index.html"  ><img  style="margin-top:10px; width: 150px;"  src="images/logo.png" alt=""></a>
             
             </div>
             <nav class="main-menu navbar">
@@ -21,33 +21,33 @@
                 <div class="navbar-collapse collapse" id="collapseNav">
                     <ul class="navigation">
                         <li class="current"></li> 
-                        <li><a href="about.php">About</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li class="dropdown"><a href="service.html" onclick="window.location='service.html'">Web Services</a>
                             <ul>
                                 
-                                <li><a href="web-dev.php">Web Designing & Development</a></li>
-                                <li><a href="ecomm.php">E-commerce Development</a></li>
-                                <li><a href="mobile.php">Mobile Application Development</a></li>
-                                <li><a href="graphic.php">Graphics & Logo Desigining</a></li>
+                                <li><a href="web-dev.html">Web Designing & Development</a></li>
+                                <li><a href="ecomm.html">E-commerce Development</a></li>
+                                <li><a href="mobile.html">Mobile Application Development</a></li>
+                                <li><a href="graphic.html">Graphics & Logo Desigining</a></li>
                             </ul>
                         </li>
                         <li><a href="technology.html">Technology</a></li>
                         
                         <li class="dropdown"><a href="marketing.html" onclick="window.location='marketing.html'">Marketing</a>
                             <ul>
-                                <li><a href="seo-lead.php">SEO & Online Marketing</a></li>
-                                <li><a href="social-media.php">Social Media Marketing</a></li>
-                                <li><a href="content-mkt.php">Content Marketing</a></li>
-                                 <li><a href="google-adwords.php">PPC/Google AdWords</a></li>
-                                  <li><a href="reputation-mgt.php">Online Reputation Management</a></li>
-                                  <li><a href="lead.php">Lead Generation</a></li>
-                                   <li><a href="video-mkt.php">Video Marketing</a></li>
-                                   <li><a href="email-marketing.php">Email Marketing</a></li>
+                                <li><a href="seo-lead.html">SEO & Online Marketing</a></li>
+                                <li><a href="social-media.html">Social Media Marketing</a></li>
+                                <li><a href="content-mkt.html">Content Marketing</a></li>
+                                 <li><a href="google-adwords.html">PPC/Google AdWords</a></li>
+                                  <li><a href="reputation-mgt.html">Online Reputation Management</a></li>
+                                  <li><a href="lead.html">Lead Generation</a></li>
+                                   <li><a href="video-mkt.html">Video Marketing</a></li>
+                                   <li><a href="email-marketing.html">Email Marketing</a></li>
 
                             </ul>
                         </li> 
                          <li><a href="ourwork.html">Our Work</a></li>                  
-                        <li class="dropdown"><a href="contact" onclick="window.location='contact.php'">Contact us</a>
+                        <li class="dropdown"><a href="marketing.html" onclick="window.location='contact.html'">Contact us</a>
                             <ul style="color: white;">
                                 <li> &nbsp;<img src="img/canada.png" style="width: 13px; height: 13px;"> +1 (647) 297-3837</li>
                                 <li> &nbsp;<img src="img/usa.png" style="width: 13px; height: 13px;"> +1 (510) 400-4818</li>

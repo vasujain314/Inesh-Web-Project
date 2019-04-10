@@ -64,23 +64,10 @@ $("#modal23").load("modal.php");
                 <div class="col-sm-6">
                     
                     <p class="my-3 text-justify">
-                    <!--    If a photo is worth thousands of words, how much more valuable is the video? This is the basis of video marketing, a marketing strategy that integrates attractive videos into your marketing campaigns.
+                       If a photo is worth thousands of words, how much more valuable is the video? This is the basis of video marketing, a marketing strategy that integrates attractive videos into your marketing campaigns.
                     </p>
                     <p class="text-center text-justify my-2">
-                      Video marketing can be used for everything from building customer rapport to promoting its brands, services or products. In addition, video marketing can work as a medium for customer's testimonials, promoting live-stream events and distributing viral content. On the surface, the method of video marketing is very simple: your brand creates videos that promotes your company in some way, increases sales, increases awareness of your products or services, or connects your customers. In practice, this is a bit more complex. Like many of your marketing efforts, video marketing data is driven, so you want to keep tabs on different metrics and track customer engagement. -->
-                  <?php 
-                      include("connect.php");
-                      $sql = 'SELECT * from `video_main`';
-                      $result = $conn->query($sql);
-
-                      if ($result->num_rows > 0) {
-                          // output data of each row
-                          while($row = $result->fetch_assoc()) {
-                              echo htmlspecialchars_decode($row['content']);
-                          }
-                      }
-                      $conn->close();
-                  ?>
+                      Video marketing can be used for everything from building customer rapport to promoting its brands, services or products. In addition, video marketing can work as a medium for customer's testimonials, promoting live-stream events and distributing viral content. On the surface, the method of video marketing is very simple: your brand creates videos that promotes your company in some way, increases sales, increases awareness of your products or services, or connects your customers. In practice, this is a bit more complex. Like many of your marketing efforts, video marketing data is driven, so you want to keep tabs on different metrics and track customer engagement.
                     </p>
 
                     <div class="row text-center" id="buttonn">
@@ -105,7 +92,7 @@ $("#modal23").load("modal.php");
                     <h3 class="text-center"  style="font-size: 3rem; color: black!important">To develop your video marketing strategy, you would like to:</h3>
                     <br/>
                     <ul style="font-size: 15px; text-align: left;margin-bottom: 5rem!important" >
-                      <!-- <li> •You need to specify some budget for video - at least, decent tools, good editing software, and video marketing guru (or, better, team) - as well as the time to build it.</li><br/>
+                      <li> •You need to specify some budget for video - at least, decent tools, good editing software, and video marketing guru (or, better, team) - as well as the time to build it.</li><br/>
 <li>•   Tell your stories. Storytelling is never as important as it is in the video, so brainstorm: What stories do you want to tell? How do you tell them?</li>
 <br/>
 <li>•   Include. It is not enough just to tell your stories; You need to engage your audience while doing this. How would you make your stories interesting? What will hook your audience?</li>
@@ -113,43 +100,16 @@ $("#modal23").load("modal.php");
 <li>•   Keep it short. There is no fixed length for marketing video (although there are recommendations), but the general rule is that less is better. Be ruthless with your editing. Cut, cut, chop everything out. Note that the span is low, so what you get, make the best of it.</li>
 <br/>
 <li>•   Publish your video remotely - uploaded to your website embedded on Google-owned YouTube and all your social media channels.</li>
-<br/> -->
-                  <?php 
-                      include("connect.php");
-                      $sql = 'SELECT * from `video_developmkt`';
-                      $result = $conn->query($sql);
-
-                      if ($result->num_rows > 0) {
-                          // output data of each row
-                          while($row = $result->fetch_assoc()) {
-                              echo htmlspecialchars_decode($row['content']);
-                          }
-                      }
-                      $conn->close();
-                  ?>
+<br/>
 
                     </ul>
                   
                         <h3 class="text-center"  style="font-size: 3rem; color: black!important">Benefits of Video Marketing</h3>
                         <br/><br/>
-                        <p class="text-center">
-                            <!-- The video helps you connect with your audience. Today, many of the company's marketing efforts are designed to help build trust. The video is a bridge that shows the links you say that you are really in, so that customers can become co-workers behind the curtain and learn your brand.
+                        <p class="text-center">The video helps you connect with your audience. Today, many of the company's marketing efforts are designed to help build trust. The video is a bridge that shows the links you say that you are really in, so that customers can become co-workers behind the curtain and learn your brand.
 The video is an SEO gold mine, which helps to increase backlinks on your site, increase likes and share (which can affect search ranking) and increase traffic to your site. And do not forget that YouTube is owned by Google, so make sure to post your video with the YT and tags, key tags of the keyword!<br/>
 Promote video information retention. If your customers hear a few, they are likely to maintain about 10% of that information three days later; On the contrary, if they hear what happens with relevant imagery, then they will maintain an average 70% of that information three days later.
-In 2020, video content will be 72% of estimated online traffic. Your Customers would also like the video, which means that good video marketing can attract new visitors. -->
-                  <?php 
-                      include("connect.php");
-                      $sql = 'SELECT * from `video_benefitmkt`';
-                      $result = $conn->query($sql);
-
-                      if ($result->num_rows > 0) {
-                          // output data of each row
-                          while($row = $result->fetch_assoc()) {
-                              echo htmlspecialchars_decode($row['content']);
-                          }
-                      }
-                      $conn->close();
-                  ?>
+In 2020, video content will be 72% of estimated online traffic. Your Customers would also like the video, which means that good video marketing can attract new visitors.
 
 </p>
 <br/><br/>
