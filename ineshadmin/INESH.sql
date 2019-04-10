@@ -203,6 +203,22 @@ COMMIT;
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.13
 
+CREATE TABLE requestquote(
+id int NOT NULL AUTO_INCREMENT,
+name varchar(255),
+email varchar(255),
+phone varchar(255),
+message varchar(255),
+PRIMARY KEY(id)
+);
+CREATE TABLE orders(
+id int NOT NULL AUTO_INCREMENT,
+name varchar(255),
+email varchar(255),
+phone varchar(255),
+PRIMARY KEY(id)
+);
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
