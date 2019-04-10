@@ -21,6 +21,10 @@
 $(function(){
 $("#header1").load("header.php");
 $("#footer1").load("footer.php");
+<<<<<<< HEAD
+=======
+$("#modal23").load("modal.php");
+>>>>>>> 78a8ec584c546b1cb0492efca0e7a82cb16a8f17
 });
     </script>
     </head>
@@ -43,6 +47,7 @@ $("#footer1").load("footer.php");
                     <div class="col-sm-6">
                         
                         <p class="my-3 text-justify">
+<<<<<<< HEAD
                            <!-- Content marketing involves creating and sharing online content (such as videos, blogs, and social media posts) that does not directly promote a brand but its purpose is to encourage interest in its products or services. Content marketing is a calculated marketing approach focused on generating and sharing valuable and relevant content to attract visitors and maintain clearly defined audiences, and finally, to run a profit-making customer action.
                            Our annual research shows that most marketers are using content marketing. In fact, it is used by many leading organizations in the world, including P & G, Microsoft, Cisco Systems, and John Deere. It has been developed and executed by small businesses and one-person shops around the world. Why? Because it works! It works! -->
                   <?php 
@@ -58,6 +63,10 @@ $("#footer1").load("footer.php");
                       }
                       $conn->close();
                   ?>
+=======
+                           Content marketing involves creating and sharing online content (such as videos, blogs, and social media posts) that does not directly promote a brand but its purpose is to encourage interest in its products or services. Content marketing is a calculated marketing approach focused on generating and sharing valuable and relevant content to attract visitors and maintain clearly defined audiences, and finally, to run a profit-making customer action.
+                           Our annual research shows that most marketers are using content marketing. In fact, it is used by many leading organizations in the world, including P & G, Microsoft, Cisco Systems, and John Deere. It has been developed and executed by small businesses and one-person shops around the world. Why? Because it works! It works!
+>>>>>>> 78a8ec584c546b1cb0492efca0e7a82cb16a8f17
                         </p>
                         <div class="row text-center" id="buttonn">
                         <button class="btn btn-lg btn-default" style="color: white; background-color:#E13737; border-radius: 0px!important; margin-top: 10vh; box-shadow: 1px 1px 1px 1px #E13737; border: 1px solid #E13737" data-toggle="modal" data-target="#myModal">
@@ -73,6 +82,7 @@ $("#footer1").load("footer.php");
                 </div>
             </div>
 
+<<<<<<< HEAD
    <div class="modal fade" id="myModal" role="dialog" style="z-index: 9999999; margin-top: 8%;">
                             <div class="modal-dialog modal-lg">
                               <div class="modal-content">
@@ -108,12 +118,16 @@ $("#footer1").load("footer.php");
                       </div>
                   </div>
               </div>
+=======
+   <div id="modal23"></div>
+>>>>>>> 78a8ec584c546b1cb0492efca0e7a82cb16a8f17
             <br/><br/><br/>
     <div class="container" >
     <div class="row">
         <div class="section-title" style="margin-bottom: 4rem;">
                     <h2 class="text-center">Overview</h2>
                 </div>
+<<<<<<< HEAD
                 <p class="text-center">
                 <!--   The difference between content marketing and other informational waste derived from the companies that you sell, which is trying to sell "goods" to you. Companies send us information all the time - it's just that most of the time it is not very relevant or valuable (can you call spam?). This is what makes perpetual content marketing so intriguing in the atmosphere of thousands of marketing messages per person per day. -->
                   <?php 
@@ -129,6 +143,9 @@ $("#footer1").load("footer.php");
                       }
                       $conn->close();
                   ?>
+=======
+                <p class="text-center">The difference between content marketing and other informational waste derived from the companies that you sell, which is trying to sell "goods" to you. Companies send us information all the time - it's just that most of the time it is not very relevant or valuable (can you call spam?). This is what makes perpetual content marketing so intriguing in the atmosphere of thousands of marketing messages per person per day.
+>>>>>>> 78a8ec584c546b1cb0492efca0e7a82cb16a8f17
 </p>
     </div>
 </div>
@@ -493,6 +510,7 @@ $("#footer1").load("footer.php");
     </div>
 
                 
+<<<<<<< HEAD
  <div class="modal fade" id="mymodal" role="dialog" style="z-index: 9999999; margin-top: 8%;">
                             <div class="modal-dialog modal-lg">
                               <div class="modal-content">
@@ -526,6 +544,9 @@ $("#footer1").load("footer.php");
                       </div>
                   </div>
               </div>
+=======
+ <div id="modal23"></div>
+>>>>>>> 78a8ec584c546b1cb0492efca0e7a82cb16a8f17
 
 <div id="footer1"></div>
 

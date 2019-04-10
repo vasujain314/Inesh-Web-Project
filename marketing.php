@@ -21,6 +21,7 @@
 $(function(){
 $("#header1").load("header.php");
 $("#footer1").load("footer.php");
+$("#modal23").load("modal.php");
 });
     </script>
 </head>
