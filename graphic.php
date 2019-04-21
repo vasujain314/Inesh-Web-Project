@@ -50,7 +50,7 @@ $("#modal23").load("modal.php");
         </div>
         <div class="row">
             <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1" style="margin-bottom: 2rem;">
-                <p class="my-3 text-justify">
+                
                   <!--  Graphic design is an art to create visual content which is used 
                    for communicating with user like a message. Using Page layout 
                    techniques and by applying visual hierarchy graphic designers use 
@@ -72,7 +72,7 @@ $("#modal23").load("modal.php");
                             }
                             $conn->close();
                         ?>
-                </p>
+            
                  <div class="row text-center" id="buttonn">
                     <button class="btn btn-lg btn-default" style="color: white; background-color:#E13737; border-radius: 0px!important; margin-top: 10vh; box-shadow: 1px 1px 1px 1px #E13737; border: 1px solid #E13737" data-toggle="modal" data-target="#myModal">
                         Request a quote&ensp;<span class="glyphicon glyphicon-arrow-right"></span>
@@ -102,7 +102,7 @@ $("#modal23").load("modal.php");
             <div class="col-xs-offset-1 col-xs-10">
                 <div class="row">
                     <div style="margin-bottom: 4rem; color: black;">
-                        <h2 class="text-center" style="font-size:2rem">
+                        
                         <!-- We believe in creating user oriented communication that’s simple, clear & engaging -->
                         <?php 
                             include("connect.php");
@@ -117,7 +117,7 @@ $("#modal23").load("modal.php");
                             }
                             $conn->close();
                         ?>
-                        </h2>
+                        
                     </div>
                 </div>
                 <p class="text-center"> -&ensp;&ensp; Strategically locate the brand to create it stand out from the crowd.</p>

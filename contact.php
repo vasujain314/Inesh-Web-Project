@@ -49,7 +49,31 @@ if(!$mail->send()) {
 ?>
 
 
+<?php
+include("connect.php");
+$result="";
+if(isset($_POST['contact']))
+{
+$sname=$conn->real_escape_string($_POST['name']);
 
+$phone=$conn->real_escape_string($_POST['phone']);
+$message=$conn->real_escape_string($_POST['message']);
+
+$sql="INSERT INTO contactus (name,phone,message)
+VALUES ('$sname','$phone','$message')";
+
+if(!$result = $conn->query($sql))
+{
+die('There was an error running the query [' . $conn->error . ']');
+}
+else{
+  $result="we will contact you soon.";
+  header("location:contact.php");
+}
+
+}
+
+?>
 
 
 
@@ -115,7 +139,8 @@ $("#footer1").load("footer.php");
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-xs-12">                    
                     <div class="left-side">
-                        <form id="contact_form" name="contact_form" action="sendmail.php" method="post">
+                    	<?= $result ?>
+                        <form id="contact_form" name="contact_form" action="" method="post">
                             <div class="form-group">
                                 <input type="text" name="name" class="form-control" value="" placeholder="Your Name" required="">
                             </div>
@@ -127,7 +152,7 @@ $("#footer1").load("footer.php");
                             </div>
                             <div class="form-group form-bottom">
                                 <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">
-                                <button class="btn-style-one" name="submit" type="submit" data-loading-text="Please wait...">send message</button>
+                                <button class="btn-style-one" name="contact" type="submit" data-loading-text="Please wait...">send message</button>
                             </div>
                         </form>
                     </div>

@@ -218,7 +218,13 @@ email varchar(255),
 phone varchar(255),
 PRIMARY KEY(id)
 );
-
+CREATE TABLE contactus(
+id int NOT NULL AUTO_INCREMENT,
+name varchar(255),
+phone varchar(255),
+message LONGTEXT,
+PRIMARY KEY(id)
+);
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;

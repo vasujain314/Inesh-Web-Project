@@ -30,12 +30,15 @@
   <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
+<head>
+  <style type="text/css">
+    table{
+    z-index:999999999;   
+    }
+   
+  </style>
+</head>
+
   <?php
  include("connect.php");
  $result="";
@@ -44,14 +47,17 @@ if(isset($_POST['delcheck'])) {
 $content  = $con->real_escape_string($_POST['content']);
 
 
-$sql="INSERT INTO $table (content) VALUES ('".$content."')";
+$sql="UPDATE $table SET content = '$content' WHERE id=1 ";
 
 if(!$result = $con->query($sql)){
 die('There was an error running the query [' . $con->error . ']');
 }
-
+else{
+  echo "Content updated Successfully";
+}
 }
 ?>
+
 
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -167,7 +173,85 @@ document.getElementById("bulkmail").className = "active treeview";
 	  <div class="container-fluid">
     </section>
     <!-- /.content -->
+    <div class="container-fluid">
+  <div class="col-sm-2">
+    <form action="" method="post" >
+      <button name="requote" >REQUEST A QUOTE </button>
+      <?= $result ?>
+    </form>
   </div>
+  <div class="col-sm-2">
+    <form action=""  method="post">
+      <button name="reorder" >ORDERS </button>
+      <?= $result ?>
+    </form>
+  </div>
+</div>
+ <?php
+ include("connect.php");
+ $result="";
+if(isset($_POST['requote'])) {
+
+$sql="SELECT * FROM requestquote;";
+  $result1 = $con->query($sql);
+    if ($result1->num_rows > 0) 
+  {
+    echo "<table  class='table table-hover'>";
+    echo "<th>ID</th>";
+    echo "<th>NAME</th>";
+    echo "<th>Email</th>";
+    echo "<th>Phone</th>";
+    echo "<th>Message</th>";
+    while($row = $result1->fetch_assoc()) 
+      {
+        echo "<tr>
+          <td>". $row["id"]. " </td>
+          <td>". $row["name"]. " </td>
+          <td>". $row["email"]. " </td>
+          <td>". $row["phone"]. " </td>
+          <td>". $row["message"]. " </td>
+         </tr>";
+        }
+    echo "</table>";
+    }
+ else 
+{
+    $result="No requests";
+} 
+}
+?>
+<?php
+ include("connect.php");
+ $result="";
+if(isset($_POST['reorder'])) {
+$sql="SELECT * FROM orders;";
+  $result1 = $con->query($sql);
+    if ($result1->num_rows > 0) 
+  {
+    echo "<table class='table table-hover'>";
+    echo "<th>ID</th>";
+    echo "<th>NAME</th>";
+    echo "<th>Email</th>";
+    echo "<th>Phone</th>";
+    while($row = $result1->fetch_assoc()) 
+      {
+        echo "<tr>
+          <td>". $row["id"]. " </td>
+          <td>". $row["name"]. " </td>
+          <td>". $row["email"]. " </td>
+          <td>". $row["phone"]. " </td>
+         </tr>";
+        }
+    echo "</table>";
+    }
+ else 
+{
+    $result="No orders";
+} 
+}
+?>
+  </div>
+ 
   <!-- /.content-wrapper -->
 <script>
 	  function check()
@@ -203,6 +287,8 @@ document.getElementById("bulkmail").className = "active treeview";
  }
 ?>
 </div>
+
+
 <!-- ./wrapper -->
 
 <!-- jQuery 2.2.3 -->

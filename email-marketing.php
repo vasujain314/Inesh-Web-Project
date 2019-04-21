@@ -49,7 +49,7 @@ $("#modal23").load("modal.php");
 
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1" style="margin-bottom: 2rem;">
-                    <p class="my-3 text-justify">
+                    
                         <!-- Using email to get your marketing message for your audience is an essential tool to increase your
                         business in the fast-moving world of internet business, because it provides open and interactive
                         communication. The most popular form of email marketing is email newsletters or e-zine.
@@ -70,7 +70,7 @@ $("#modal23").load("modal.php");
                       }
                       $conn->close();
                   ?>
-                    </p>
+                    
                     <div class="row text-center" id="buttonn">
                 <button class="btn btn-lg btn-default" style="color: white; background-color:#E13737; border-radius: 0px!important; margin-top: 10vh; box-shadow: 1px 1px 1px 1px #E13737; border: 1px solid #E13737" data-toggle="modal" data-target="#myModal">
                     Request a quote&ensp;<span class="glyphicon glyphicon-arrow-right"></span>
@@ -99,7 +99,7 @@ $("#modal23").load("modal.php");
             </div>
             <div class="row">
                 <div class="col-xs-10 col-xs-offset-1">
-                    <p class="my-3 text-justify">
+                    
                         <!-- The basis behind email marketing is that you create a list of customers who wants to hear from you.
                         Then you regularly market them by email so they can stay on top and buy more. You may be reading
                         this thinking that email marketing has already reached its peak, that everybody is doing it, and you
@@ -121,7 +121,7 @@ $("#modal23").load("modal.php");
                       }
                       $conn->close();
                   ?>
-                    </p>
+                    
                 </div>
             </div>   
         </div>

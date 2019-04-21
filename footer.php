@@ -53,11 +53,12 @@
             <div class="row">
 
                 <div class="col-sm-1"><a href="index.html"><img width="80px" style="margin-top:0px" src="images/logo.png" alt=""></a></div>
-            <div class="col-sm-1"></div>
+            
                 <div class="col-sm-2"><a style="font-size: 13px;" href="terms.html">Terms & conditions</a> </div>
                 <div class="col-sm-2"><a style="font-size: 13px;" href="disclaimer.html">Disclaimer</a></div>
                 <div class="col-sm-2" align="left"><a style="font-size: 13px;" href="privacy.html"> Privacy policy</a></div>
                 <div class="col-sm-2"><a style="font-size: 13px;" href="refund.html"> Refund & Cancellation policy</a></div>
+                <div class="col-sm-1"><a style="font-size: 13px;" href="sitemap.html">sitemap</a></div>
 
               <div class="col-sm-2">
                 <p>Inesh Enterprises © 2019 All Rights Reserved</p>

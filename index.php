@@ -25,6 +25,10 @@ $("#footer1").load("footer.php");
     </script>
 
 </head>
+<?php 
+define('WP_USE_THEMES', false);
+require('blog/wp-blog-header.php');
+?>
 
 <body>
 <div class="page-wrapper">
@@ -420,12 +424,19 @@ I really do recommend this place. I wish you guys all the luck for future. And t
                 <h2>Why work with Inesh?</h2>
             </div>
             <div class="col-lg-12 col-md-12 col-xs-12">
-                <div class="text">
-                    <p>For more than 5 years our digital marketing team have learnt to a great extent by working with many clients from small home based businesses to multi-national across all industries. </p>
-                </div>
-                <div class="content-text">
-                    <p>With all of that knowledge, our team has become specialists in their relevant fields be it in SEO, Social Media Marketing, PPC or Online Reputation Management. We are immensely proud of our huge client retention ratio, which is only achieved because of our consistent results! We are very positive in what we can attain; our services are supple and give you the freedom to choose one according to your needs, we have no fixed packages and our clients are free to customize the services with the help of our sales team. We provide assurance to all our digital and online marketing clients to see a positive return on investment (ROI) within a few months of initiating the online marketing campaigns with us. We work with defined strategies and KPI’s to measure the advancement and we share the same with our clients too.</p>
-                </div>
+                <?php 
+                        include("connect.php");
+                        $sql = 'SELECT * from `home_whywork`';
+                        $result = $conn->query($sql);
+
+                        if ($result->num_rows > 0) {
+                            // output data of each row
+                            while($row = $result->fetch_assoc()) {
+                                echo htmlspecialchars_decode($row['content']);
+                            }
+                        }
+                            $conn->close();
+                    ?>
             </div>
             
             </div>
@@ -486,7 +497,20 @@ I really do recommend this place. I wish you guys all the luck for future. And t
         <br/><br/>
     </div>
 
-   
+   <?php
+
+$number_of_posts = 5;
+$args = array( 'numberposts' => $number_of_posts );
+$recent_posts = wp_get_recent_posts( $args );
+foreach( $recent_posts as $recent_post ){
+    echo "<div class='col-sm-4'>";
+echo "<h3 style='align:center;'>".$recent_post['post_title']."</h3>";
+echo  "<p style='align:center;'>".$recent_post['post_content']."</p><br><br>";
+echo "</div>";
+
+}
+
+?>
     <!--
     <section class="blog-section">
         <div class="container">

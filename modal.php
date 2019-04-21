@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
- <?php
+
+<?php
 
 
 $result="";
@@ -50,26 +51,27 @@ if(!$mail->send()) {
 
 }
 
-
-
-
 ?>
 <?php
 include("connect.php");
 $result="";
 if(isset($_POST['quote']))
 {
-$sname=$con->real_escape_string($_POST['name']);
-$email=$con->real_escape_string($_POST['email']);
-$phone=$con->real_escape_string($_POST['phone']);
-$message=$con->real_escape_string($_POST['msg']);
+$sname=$conn->real_escape_string($_POST['name']);
+$email=$conn->real_escape_string($_POST['email']);
+$phone=$conn->real_escape_string($_POST['phone']);
+$message=$conn->real_escape_string($_POST['msg']);
 
 $sql="INSERT INTO requestquote (name,email,phone,message)
 VALUES ('$sname','$email','$phone','$message')";
 
-if(!$result = $con->query($sql))
+if(!$result = $conn->query($sql))
 {
-die('There was an error running the query [' . $con->error . ']');
+die('There was an error running the query [' . $conn->error . ']');
+}
+else{
+  $result="we will contact you soon.";
+  header("location:index.php");
 }
 
 }
@@ -80,17 +82,21 @@ include("connect.php");
 $result="";
 if(isset($_POST['order']))
 {
-$sname=$con->real_escape_string($_POST['name']);
-$email=$con->real_escape_string($_POST['email']);
-$phone=$con->real_escape_string($_POST['phone']);
+$sname=$conn->real_escape_string($_POST['name']);
+$email=$conn->real_escape_string($_POST['email']);
+$phone=$conn->real_escape_string($_POST['phone']);
 
 
 $sql="INSERT INTO orders (name,email,phone)
 VALUES ('$sname','$email','$phone')";
 
-if(!$result = $con->query($sql))
+if(!$result = $conn->query($sql))
 {
-die('There was an error running the query [' . $con->error . ']');
+die('There was an error running the query [' . $conn->error . ']');
+}
+else{
+  $result="we will contact you soon.";
+  header("location:index.php");
 }
 
 }
@@ -110,28 +116,29 @@ die('There was an error running the query [' . $con->error . ']');
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
+              <p><?= $result ?></p>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
               <h4 class="modal-title" style="text-align: center;">Request a Quote<br/>(Complete This form)</h4>
           </div>
           <div class="modal-body">
            <div class="container" style="width: 80%;">
-             <form action="">
+             <form action="<?=$_SERVER['PHP_SELF'];?>" method="POST">
                 <div class="form-group">
                   <label for="pwd">Name</label>
-                  <input type="name" class="form-control" id="pwd" placeholder="Enter Name" name="name">
+                  <input type="name" class="form-control"  placeholder="Enter Name" name="name">
               </div>
                <div class="form-group">
                   <label for="email">Email:</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+                  <input type="email" class="form-control"  placeholder="Enter Email" name="email">
               </div>
               
                 <div class="form-group">
                   <label for="pwd">Phone</label>
-                  <input type="phone" class="form-control" id="pwd" placeholder="Enter phone no." name="phone">
+                  <input type="phone" class="form-control" placeholder="Enter phone no." name="phone">
               </div>
               <div class="form-group">
                   <label for="pwd">Message</label>
-                  <input type="message" class="form-control" id="pwd" placeholder="Message For Our Experts" name="msg">
+                  <input type="message" class="form-control"  placeholder="Message For Our Experts" name="msg">
               </div>
               <button type="submit" name="quote" class="btn btn-default" style="background-color: #E13737; color: white;">Submit</button>
           </form>
@@ -146,24 +153,25 @@ die('There was an error running the query [' . $con->error . ']');
                             <div class="modal-dialog modal-lg">
                               <div class="modal-content">
                                 <div class="modal-header">
+                                  <p><?= $result ?></p>
                                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                                   <h4 class="modal-title" style="text-align: center;">Order Inesh Services<br/>(Complete This form)</h4>
                               </div>
                               <div class="modal-body">
                                <div class="container" style="width: 80%;">
-                                 <form action="">
+                                 <form action="<?=$_SERVER['PHP_SELF'];?>" method="POST">
                                     <div class="form-group">
                                       <label for="pwd">Name</label>
-                                      <input type="name" class="form-control" id="pwd" placeholder="Enter Name" name="name">
+                                      <input type="name" class="form-control" placeholder="Enter Name" name="name">
                                   </div>
                                    <div class="form-group">
                                       <label for="email">Email:</label>
-                                      <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+                                      <input type="email" class="form-control"  placeholder="Enter Email" name="email">
                                   </div>
                                   
                                     <div class="form-group">
                                       <label for="pwd">Phone</label>
-                                      <input type="phone" class="form-control" id="pwd" placeholder="Enter phone no." name="phone">
+                                      <input type="phone" class="form-control"  placeholder="Enter phone no." name="phone">
                                   </div>
                                  
                                   <button type="submit" name="order" class="btn btn-default" style="background-color: #E13737; color: white;">Submit</button>

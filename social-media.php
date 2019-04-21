@@ -102,7 +102,7 @@ $("#modal23").load("modal.php");
                     <h2 class="text-center">Overview</h2>
                 </div>
                 <p class="text-center">
-                  Your potentia<!-- l customers are already communicating with brands through social media, and if you are not speaking directly to your audience through social media platforms like Facebook, Twitter, Instagram and Pinterest, then you are missing a huge aspect of marketing! Great marketing on social media can lead to remarkable success in your business, dedicated brand advocates and even driving leads and sales.
+                <!--   Your potential customers are already communicating with brands through social media, and if you are not speaking directly to your audience through social media platforms like Facebook, Twitter, Instagram and Pinterest, then you are missing a huge aspect of marketing! Great marketing on social media can lead to remarkable success in your business, dedicated brand advocates and even driving leads and sales.
 Social media marketing is a form of online marketing which involves creating and sharing content on social media networks to achieve your marketing and branding goals. It involves actions like posting text, image updates, videos, and other content that increases user engagement, as well as paid social media ads. Before you start creating a social media marketing campaign, consider the goals of your business. Keeping a social strategy in mind, starting a social media marketing campaign is like roaming in a forest without a map - you may enjoy, but you might get lost. -->
                   <?php 
                       include("connect.php");

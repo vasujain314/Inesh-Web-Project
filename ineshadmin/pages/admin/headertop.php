@@ -125,6 +125,30 @@ $name = $_SESSION['name'];
           </a>
           
         </li>
+        <li class=" treeview" name= "chngpswrd" id= "chngpswrd">
+          <a  href="requestquote.php">
+            <i class="fa fa-user"></i> <span>Request Quote Data</span>
+            <span class="pull-right-container">
+            </span>
+          </a>
+          
+        </li>
+        <li class=" treeview" name= "chngpswrd" id= "chngpswrd">
+          <a  href="orders.php">
+            <i class="fa fa-user"></i> <span>Orders Data</span>
+            <span class="pull-right-container">
+            </span>
+          </a>
+          
+        </li>
+        <li class=" treeview" name= "chngpswrd" id= "chngpswrd">
+          <a  href="contactus.php">
+            <i class="fa fa-user"></i> <span>Contactus Data</span>
+            <span class="pull-right-container">
+            </span>
+          </a>
+          
+        </li>
 	  
       </ul>
     </section>
